@@ -4,7 +4,7 @@ function getDesc(id,doc){
 	let title;
 	let desc;
 	
-	fetch("https://willamette.edu/~jldeyoung/Blog/"+doc).then(r=>r.text()).then((html)=>{ // get the content of products.html
+	fetch("/Blog/"+doc).then(r=>r.text()).then((html)=>{ // get the content of products.html
 	let element = document.createElement("html");
 	element.innerHTML = html; // parse the html
 	title = element.getElementsByTagName("title")[0];
@@ -25,11 +25,11 @@ let blogHeader = `
 	<div class="w3-top" style="font-family: Lato">
 	  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
 		<a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-		<a href="/~jldeyoung/index.html#home" class="w3-bar-item w3-button">HOME</a>
-		<a href="/~jldeyoung/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-		<a href="/~jldeyoung/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-		<a href="/~jldeyoung/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
-		<a href="/~jldeyoung/Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
+		<a href="/index.html#home" class="w3-bar-item w3-button">HOME</a>
+		<a href="/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+		<a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+		<a href="/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
+		<a href="/Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
 	  </div>
 	</div>
 `;

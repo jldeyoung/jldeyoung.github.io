@@ -41,22 +41,22 @@ let appHeader = `
     </a>
 	  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
 		<a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-		<a href="/~jldeyoung/index.html#home" class="w3-bar-item w3-button"> HOME</a>
-		<a href="/~jldeyoung/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-		<a href="/~jldeyoung/index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
-		<a href="/~jldeyoung/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-		<a href="/~jldeyoung/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
-		<a href="/~jldeyoung/Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
+		<a href="/index.html#home" class="w3-bar-item w3-button"> HOME</a>
+		<a href="/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+		<a href="/index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
+		<a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+		<a href="/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
+		<a href="/Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
 	  </div>
 	</div>
 	
 	<!-- Navbar on small screens -->
 	  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-		<a href="/~jldeyoung/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-		<a href="/~jldeyoung/index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-		<a href="/~jldeyoung/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-		<a href="/~jldeyoung/resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
-		<a href="/~jldeyoung/Blog/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+		<a href="/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+		<a href="/index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+		<a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+		<a href="/resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+		<a href="/Blog/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
 		<!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
 	  </div>
 `;
