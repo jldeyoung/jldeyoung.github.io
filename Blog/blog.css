@@ -1,0 +1,97 @@
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+@import url("https://www.w3schools.com/lib/w3-theme-black.css");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif;
+    color: teal;
+}
+
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+    
+body {
+    font-family: serif;
+    font-size: 18pt;
+    color: white;
+    background-color: darkslategrey;
+    text-align: left;
+}
+
+code{
+	font-family: 'Courier New', monospace;
+	color: whitesmoke;
+	background-color: gray;
+	max-width: 400px;
+	word-wrap: normal;
+}
+
+a:link {
+    color: lightslategrey;
+    font-family: Lato;
+}
+
+a.h {
+	color: teal;
+	text-decoration: none;
+}
+
+a:hover{
+	color: darkgrey;
+}
+
+.date {
+    color: lightgray;
+    font-size: 14pt;
+}
+
+p {
+    font-family: serif;
+}
+
+.pFooter {
+    font-family: Lato;
+}
+
+button{
+    align-content: center;
+}
+
+.card {
+    padding: 10px;
+    border-color: darkgrey;
+    border-width: thin;
+    background-color: blanchedalmond;
+    color: black;
+    margin: 10px;
+    column-span: 1;
+    height: auto;
+    
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: inherit;
+}
+
+.bottom-center {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translate(50%,0);
+}
+
+.columns {
+    margin-left: 100px;
+    margin-right: 100px;
+    column-count: 3;
+    column-gap: 20px;
+    column-width: 20%;
+}
