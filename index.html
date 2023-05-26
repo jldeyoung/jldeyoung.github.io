@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=EB+Garamond">
 <script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="Common/homepage.css">
 <style>
@@ -65,10 +65,10 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="/index.html#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-	<a href="//index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="index.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+	<a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
     <a href="Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
     <!--<a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
@@ -78,9 +78,9 @@ body, html {
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-	<a href="/index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+	<a href="index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
     <a href="resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
     <a href="Blog/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
     <!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
@@ -98,7 +98,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center w3-text-teal">ABOUT ME</h3>
   <!--<p class="w3-center"><em>Programmer. Student. Musician. Photographer.</em></p>-->
-	<p>Hi there. I'm Juni, a recent Computer Science and Mathematics graduate from Willamette University in Salem, OR, class of 2023. I also participated heavily in the music program, where I worked as an assistant via the work-study program, managing department Web pages, including
+	<p>Hi there. I'm Juni, a recent Computer Science and Mathematics graduate from Willamette University in Salem, OR, class of 2023. I participated heavily in the music program, where I worked as an administrative assistant via the work-study program, which included managing department Web pages, in particular
 	the <a href="https://willamette.edu/arts-sciences/music/students/index.html" target="_blank">Student Resources</a> and <a href="https://willamette.edu/arts-sciences/music/students/forms/index.html" target="_blank">Forms</a> pages, which I 
 	<a href="Blog/music-forms.html">remodeled</a> from tip to tail (or, as we musicians like to say, <em>da capo al fine</em>) as we transitioned to 
 	paperless forms. You can find a few of my solo performances (among other things) on my 
@@ -355,8 +355,9 @@ body, html {
 		
 		<div class="w3-section w3-padding w3-round w3-card-4" style="background-color:#404050">
 			<h3>Senior Recital</h3>
-			<p>I have taken voice lessons for many years, and that work is going to be showcased on April 22, 2023 at my Senior Recital, where I will be performing R. Vaughan Williams' <a href="https://en.wikipedia.org/wiki/Songs_of_Travel" target="_blank"><cite author="R. Vaughan Williams">Songs of Travel</cite></a> song cycle, a setting of <a href="https://en.wikisource.org/wiki/Songs_of_Travel_and_Other_Verses" target="_blank">poetry by Robert Louis Stevenson</a>. The recital will take place at 3:00 PM in Rogers Rehearsal Hall, located in Willamette University's Mary Stewart Rogers Music Center.</p>	
-			<img src="Images/poster.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Recital poster">
+			<p>I have taken voice lessons for many years, and that work has been showcased at my Senior Recital on April 22, 2023, where I performed R. Vaughan Williams' <a href="https://en.wikipedia.org/wiki/Songs_of_Travel" target="_blank"><cite author="R. Vaughan Williams">Songs of Travel</cite></a> song cycle, a setting of <a href="https://en.wikisource.org/wiki/Songs_of_Travel_and_Other_Verses" target="_blank">poetry by Robert Louis Stevenson</a>. The recital will take place at 3:00 PM in Rogers Rehearsal Hall, located in Willamette University's Mary Stewart Rogers Music Center.</p>	
+			<!--<img src="Images/poster.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Recital poster">-->
+			<iframe width="100%" height="500px" src="https://www.youtube.com/embed/5CBS0p1QWnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 		
 		<div class="w3-section w3-padding w3-round w3-card-4" style="background-color:#404050">
@@ -366,17 +367,17 @@ body, html {
 			<div class="w3-row-padding w3-center">
 				<div class="w3-col m4">
 					<!--Vode An-->
-					<iframe width="250" height="140" src="https://www.youtube-nocookie.com/embed/BR_1VtQdF34" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="100%" height="140" src="https://www.youtube-nocookie.com/embed/BR_1VtQdF34" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				
 				<div class="w3-col m4">
 					<!--Land Use Project-->
-					<iframe width="250" height="140" src="https://www.youtube.com/embed/1C1PQL4AtpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="100%" height="140" src="https://www.youtube.com/embed/1C1PQL4AtpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 				
 				<div class="w3-col m4">
 					<!--Pilgrim Song-->
-					<iframe width="250" height="140" src="https://www.youtube.com/embed/sN7eqcD56nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe width="100%" height="140" src="https://www.youtube.com/embed/sN7eqcD56nY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>

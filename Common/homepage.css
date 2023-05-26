@@ -17,15 +17,14 @@ a:hover{
 }
     
 body {
-    font-family: serif;
     font-size: 18pt;
     color: whitesmoke;
     background-color: darkslategrey;
     text-align: left;
 }
 
-p{
-    font-family: serif;
+p {
+	font-family: EB Garamond;
 }
 
 .pFooter {
@@ -53,7 +52,6 @@ code{
     margin: 10px;
     column-span: 1;
     height: auto;
-    
 }
 
 .container {
