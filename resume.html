@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+<head id="imports">
 <title>Resume</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
-<link rel="stylesheet" href="Common/homepage.css">
-<script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
-    
 <style>
     p {font-size: 14pt}
 	
@@ -15,10 +10,18 @@
 		background-color: #3a3a3a;
 	}
 </style>
+<!--<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato&family=EB+Garamond'>
+<link rel="stylesheet" href="Common/homepage.css">-->
+<script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
+</head>
     
 <body>
 
 <script defer src="Common/script.js"></script>
+<script defer src="Common/hdr-ftr.js"></script>
 <header id="app-header"></header>
     
 <!-- Page Container -->
@@ -49,7 +52,7 @@
 			  
 			  <button onclick="hide_show('contact')" class="w3-button w3-large w3-round w3-block w3-left-align w3-hover-teal w3-hover-text-light-grey" style="color:lightseagreen"><b><i class="fa fa-address-card fa-fw w3-margin-right"></i><span style="color:white">Contact</span></b></button>
 			  <div id="contact" class="w3-container w3-hide">
-			  <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Student</p>
+			  <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Recent Grad</p>
 			  <p><i class="fa fa-home fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Boulder, CO</p>
 			  <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i><a href="mailto:jldeyoung@live.com">jldeyoung@live.com</a></p>
 			  <p><i class="fa fa-github fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i><a href="https://github.com/wu-jldeyoung" target="_blank">GitHub/wu-jldeyoung</a></p>
@@ -208,7 +211,7 @@
 		  <!--Awards-->
 		  <div class="w3-medium w3-card-4 w3-padding-small w3-round w3-margin-bottom" style="background-color:darkslategrey">
 		  <button onclick="hide_show('awd')" class="w3-button w3-large w3-round w3-block w3-left-align w3-hover-teal w3-hover-text-light-grey" style="color:lightseagreen"><b><i class="fa fa-trophy fa-fw w3-margin-right"></i><span style="color:white">Awards</span></b></button>
-			<div id="awd" class="w3-container w3-hide w3-card-4 w3-margin w3-round"  style="background-color:#202030">
+			<div id="awd" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-margin-bottom w3-round"  style="background-color:#202030">
 				<ul>
 				<li>Eagle Scout Award, Scouts BSA Troop 77</li>
 				<li>Willamette University DataFest 2022, Best Insight</li>
@@ -257,21 +260,20 @@
 			<button onclick="hide_show('edu')" class="w3-button w3-large w3-round w3-block w3-left-align w3-hover-teal w3-hover-text-light-grey" style="color:lightseagreen"><b><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large"></i><span class="w3-large" style="color:white">Education</span></b></button>
 				<div id="edu" class="w3-container w3-hide">
 				<!--WU-->
-				<div class="w3-container w3-card w3-round" style="background-color:#202030">
+				<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:#202030">
 				  <h5><b>Willamette University</b></h5>
 				  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019-2023</h6>
 					<p>Bachelor of Science, Computer Science</p>
 					<p>Bachelor of Arts, Mathematics</p>
 				</div>
 				<!--End-->
-				<br>
+				
 				<!--BHS-->
-				<div class="w3-container w3-card w3-round" style="background-color:#202030">
+				<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:#202030">
 				  <h5><b>Boulder High School</b></h5>
 				  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2019</h6>
 				</div>
 				<!--End-->
-				<br>
 				</div>
 		  </div>
 		  <!--End Section-->
@@ -279,21 +281,18 @@
 		<!--End Left Card-->
 		</div>
 	  
-	  <!--<br>-->
-	  
-
-    <!-- End Left Column -->
+	<!-- End Left Column -->
     </div>
 
     <!-- Right Column -->
     <div class="w3-twothird w3-margin-bottom">
     
       <!--Work Experience-->
-	  <div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
+	  <div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round w3-margin-bottom">
         <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Work Experience</h2>
 		<div id="work" class="w3-container">	
 			<!--WITS Summer-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('wits')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Technical Assistant / Willamette Integrated Technology Services</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - Aug 2023</h6>
@@ -305,10 +304,9 @@
 				<li>Maintained and upgraded network infrastructure</li>
 			    </ul>
 			</div>
-			<br>
 			<!--End Card-->
 			<!--Music Dept-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('msdpt')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Work-Study Assistant / Willamette University Music <abbr title="Department">Dept.</abbr></b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - May 2023</h6>
@@ -325,9 +323,8 @@
 				</ul>
 			</div>
 			<!--End-->
-			<br>
 			<!--RA-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('ra')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Resident Advisor / Willamette University Residence Life and Housing</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - May 2023</h6>
@@ -342,9 +339,8 @@
 				</ul>
 			</div>
 			<!--End Card-->
-			<br>
 			<!--QUAD-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('quad')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Tutor / Willamette University QUAD center</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2023 - May 2023</h6>
@@ -357,9 +353,8 @@
 				</ul>
 			</div>
 			<!--End Card-->
-			<br>
 			<!--Aphrodite-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('aphrodite')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Research Assistant / Willamette University Computer Science <abbr title="Department">Dept.</abbr></b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - May 2023</h6>
@@ -370,10 +365,9 @@
 				<li>Presented research outcomes to audiences of 10-30 people</li>
 				</ul>
 			</div>
-			<br>
 			<!--End Card-->
 			<!--MarCom Web-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('marcom')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Web Production Assistant / Willamette University Marketing and Communications</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Jan 2022</h6>
@@ -383,11 +377,10 @@
 				<li>Received tasks and instruction through Asana project management system</li>
 				</ul>
 			</div>
-			<br>
 			<!--End Card-->
 			
 			<!--Template-->
-			<!--<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<!--<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('section')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Job Title / Company</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - <span class="w3-tag w3-round" style="background-color:lightseagreen; color:darkslategrey">Current</span></h6>
@@ -398,7 +391,6 @@
 				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
 				</ul>
 			</div>
-			<br>
 			<!--End Card-->
 		</div>
 		
@@ -407,7 +399,7 @@
 		</button>
 		<div id="other" class="w3-container w3-hide">
 			<!--Discord-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('discord')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Student Programmer / Willamette University <abbr title="Computer Science Department">CS Dept.</abbr></b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
@@ -418,10 +410,9 @@
 				<li>Maintained a sense of community by making semi-regular posts and engaging in conversation with 50-60 server members</li>
 				</ul>
 			</div>
-			<br>
 			<!--End Card-->
 			<!--Grounds-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('section')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Seasonal Groundskeeper / Boulder Valley School District</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2021 - Aug 2021</h6>
@@ -432,10 +423,9 @@
 				<li>Operated gas-powered machinery such as weed whackers and lawnmowers</li>
 				</ul>
 			</div>
-			<br>
 			<!--End Card-->
 			<!--Suttle Lake-->
-			<div class="w3-container w3-card w3-round" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('suttle')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Kitchen Assistant / Suttle Lake United Methodist Camp</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - Aug 2019</h6>
@@ -445,20 +435,17 @@
 				<li>Prepared meals for up to 140 people, including chopping vegetables, running the dishwasher, and packaging leftovers</li>
 				</ul>
 			</div>
-			<br>
 			<!--End Card-->
 		</div>
 		
       </div>
 	  <!--End Section-->
-		
-		<br>
-		
+	  
 		<!--Volunteer Experience-->
-		<div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
+		<div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round w3-margin-bottom">
         <h2 class="w3-text-light-grey w3-padding-16"><i class="fas fa-hand-holding-heart fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Volunteer Experience</h2>
 			<!--BSA-->
-			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('bsa')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Member / Scouts BSA Troop 77</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2012 - May 2019</h6>
@@ -480,10 +467,9 @@
 					</ul>
 				</div>
 			</div>
-			<br>
 			<!--End Card-->
 			<!--TA-->
-			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left" style="background-color:darkslategrey">
+			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('ta')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Teaching Assistant / Boulder High School</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
@@ -493,10 +479,9 @@
 				<li>Coached students one-on-one on lab projects, providing assistance and grading performance</li>
 				</ul>
 			</div>
-			<br>
 			<!--End Card-->
 			<!--Template-volunteer-->
-			<!--<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left" style="background-color:darkslategrey">
+			<!--<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('section')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 			  <h5><b>Position / Organization</b></h5>
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
@@ -507,12 +492,9 @@
 				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
 				</ul>
 			</div>
-			<br>
 			<!--End Card-->
 		</div>
 		<!--End Section-->
-		
-		<br>
 		
 		<!--Coursework-->
 		<div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
