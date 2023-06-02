@@ -34,10 +34,10 @@ let appFooter = `
 	  <div class="w3-xlarge w3-section">
 		<a href="http://github.com/jldeyoung" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
 		<a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank"><i class="fa fa-youtube-play w3-hover-opacity"></i></a>
-		<a href="mailto:jldeyoung@willamette.edu"><i class="fa fa-envelope w3-hover-opacity" target="_blank"></i></a>
+		<a href="mailto:jldeyoung@live.com"><i class="fa fa-envelope w3-hover-opacity" target="_blank"></i></a>
 	  </div>
 	  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-	  <p>Images by Juni L DeYoung &copy; 2022.</p>
+	  <p>Images by Juni L DeYoung &copy; 2023.</p>
 	</footer>
 `;
 
@@ -51,9 +51,20 @@ let imports = `
 	<link rel="stylesheet" href="Common/homepage.css">
 `;
 
-document.getElementById("imports").innerHTML += imports;
-document.getElementById("app-header").innerHTML = appHeader;
-document.getElementById("app-footer").innerHTML = appFooter;
+let i = document.getElementById("imports");
+if(i !== null) {
+	i.innerHTML += imports;
+}
+
+let h = document.getElementById("app-header");
+if(h !== null){
+	h.innerHTML = appHeader;
+}
+
+let f = document.getElementById("app-footer")
+if(f !== null){
+	f.innerHTML = appFooter;
+}
 
 function hide_show(id) {
   var x = document.getElementById(id);

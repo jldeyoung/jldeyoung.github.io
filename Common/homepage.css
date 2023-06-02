@@ -35,6 +35,10 @@ button{
     align-content: center;
 }
 
+button:hover {
+	color: white;
+}
+
 code{
 	font-family: 'Courier New', monospace;
 	color: red;

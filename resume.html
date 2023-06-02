@@ -28,7 +28,7 @@
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
   <!-- The Grid -->
-  <div class="w3-row-padding" style="margin-top: 60px">
+  <div class="w3-row-padding" style="margin-top: 60px"
   
     <!-- Left Column -->
     <div class="w3-third" style="color: light-grey">
@@ -500,10 +500,11 @@
 		<div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
         <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Highlighted Coursework</h2>
 		<p>Course descriptions have been pulled from the <a href="https://collslfsrv.willamette.edu/Student/Courses">Willamette University Course Catalog</a>.</p>
+			
 			<div class="w3-row w3-small w3-block">
 				
 				<!--Data Struct-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('struct')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Data Structures</b></h5>
 				  </button>
@@ -512,7 +513,7 @@
 				<!--End Card-->
 				
 				<!--Algorithms-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('algs')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Analysis of Algorithms</b></h5>
 				  </button>
@@ -522,7 +523,7 @@
 				<!--End Card-->
 				
 				<!--Arch&Comp-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('anc')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Architecture and Compilers</b></h5>
 				  </button>
@@ -530,12 +531,9 @@
 				</div>
 				
 				<!--End Card-->
-			
-			</div>
-			<div class="w3-row w3-small w3-block">
 				
 				<!--Net&Sys-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('sys')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Networks and Systems</b></h5>
 				  </button>
@@ -545,7 +543,7 @@
 				<!--End Card-->
 				
 				<!--JSem-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('jsem')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Software Development</b></h5>
 				  </button>
@@ -559,7 +557,7 @@
 				<!--End Card-->
 				
 				<!--Ethics-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('ethics')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Computers, Ethics, and Public Policy</b></h5>
 				  </button>
@@ -569,10 +567,13 @@
 				<!--End Card-->
 				
 			</div>
+			
+			<!--End Row-->
+			
 			<div class="w3-row w3-small w3-block">
 				
 				<!--GIS-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('envs250')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Introduction to Geographic Information Systems</b></h5>
 				  </button>
@@ -582,7 +583,7 @@
 				<!--End Card-->
 				
 				<!--Foundations-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('founds')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Foundations of Advanced Math</b></h5>
 				  </button>
@@ -592,7 +593,7 @@
 				<!--End Card-->
 				
 				<!--Multi-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('multi')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Multivariable Calculus</b></h5>
 				  </button>
@@ -602,7 +603,7 @@
 				<!--End Card-->
 				
 				<!--Diff Eq-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('diffeq')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Differential Equations</b></h5>
 				  </button>
@@ -612,7 +613,7 @@
 				<!--End Card-->
 				
 				<!--Linear-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('linear')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Linear Algebra</b></h5>
 				  </button>
@@ -622,7 +623,7 @@
 				<!--End Card-->
 				
 				<!--Abstract-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('abstract')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Abstract Algebra</b></h5>
 				  </button>
@@ -631,8 +632,14 @@
 				
 				<!--End Card-->
 				
+			</div>
+				
+			<!--End Row-->
+				
+			<div class="w3-row w3-small w3-block">
+				
 				<!--Geometry-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('geom')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Modern Geometry</b></h5>
 				  </button>
@@ -642,7 +649,7 @@
 				<!--End Card-->
 				
 				<!--Thesis-->
-				<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('thesis')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Research Seminar in Mathematics</b></h5>
 				  </button>
@@ -652,7 +659,7 @@
 				<!--End Card-->
 				
 				<!--Course Template-->
-				<!--<div class="w3-container w3-third w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				<!--<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 				  <button onclick="hide_show('desc')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
 				  <h5><b>Course Title</b></h5>
 				  </button>
