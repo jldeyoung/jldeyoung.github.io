@@ -50,6 +50,8 @@ function hide_show(id) {
   var x = document.getElementById(id);
   if (x.className.indexOf("w3-show") == -1) {
 	x.className += " w3-show";
+	alert(`Showing section ${id}`);
+	x.previousElementSibling.style.overflow = "visible";
   } else {
 	x.className = x.className.replace(" w3-show", "");
   }
