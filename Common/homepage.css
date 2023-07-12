@@ -15,6 +15,10 @@ html,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif; color: lightseagreen}
 a:hover{
 	color: slategrey;
 }
+
+h1,h2,h3,h4,h5,h6:hover {
+	color: white;
+}
     
 body {
     font-size: 14pt;
@@ -110,8 +114,8 @@ div.footer {
   position: -webkit-sticky;
   position: sticky;
   top: 56px;
-  height: 750px;
+  height: 740px;
   /* margin-top: 20px; */
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   overflow-y: scroll;
 }
