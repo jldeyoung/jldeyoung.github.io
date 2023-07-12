@@ -106,9 +106,12 @@ div.footer {
 	background-position: bottom;
 }
 
-div.sticky {
+.sticky {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  left: 0;
+  top: 56px;
+  height: 750px;
+  /* margin-top: 20px; */
+  margin-bottom: 8px;
+  overflow-y: scroll;
 }

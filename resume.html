@@ -22,6 +22,22 @@
 
 <script src="Common/script.js"></script>
 <script defer src="Common/hdr-ftr.js"></script>
+
+<!--<script>
+	window.onscroll = function() {myFunction()};
+
+	var stickr = document.getElementById("stickyDiv");
+	var sticky = stickr.offsetTop;
+
+	function myFunction() {
+	  if (window.pageYOffset < sticky) {
+		stickr.classList.remove("sticky");
+	  } else {
+		stickr.classList.add("sticky");
+	  }
+	}
+</script>-->
+
 <header id="app-header"></header>
     
 <!-- Page Container -->
@@ -31,20 +47,20 @@
   <div class="w3-row-padding" style="padding-top: 40px"
   
     <!-- Left Column -->
-    <div class="w3-col m12 l4" style="color: light-grey">
+    <div class="w3-col s12 m5 l4 sticky" id="stickyDiv" style="margin-right:0px">
         
 		
 		<!--Cards container-->
-		<div class="w3-container w3-blue-grey w3-round w3-padding-16 sticky">
+		<div class="w3-container w3-blue-grey w3-round w3-padding-16">
 		  
 		  <!--Contact card-->
 		  <div class="w3-container w3-card w3-round-large w3-padding-small w3-margin-bottom" style="background-color:darkslategrey">
 			  <!--Picture-->
 			  <div class="w3-text-medium-gray w3-round-xlarge w3-margin-bottom">
-				<div class="w3-display-container w3-round-large" style="overflow: hidden;height: 350px">
+				<div class="w3-display-container w3-round-large" style="overflow: hidden; width: 100%">
 				  <img src="Images/headshot-math-square.jpg" alt="Headshot" style="width: 100%">
-				  <div class="w3-display-bottomleft w3-container w3-text-medium-grey">
-					<h2 class="w3-opacity-min w3-padding-small w3-round-xlarge" style="color:lightseagreen; background-color:darkslategrey">Juni L DeYoung</h2>
+				  <div class="w3-display-bottomleft">
+					<h2 class="w3-opacity-min w3-padding-small w3-round-xlarge" style="color:lightseagreen; background-color:darkslategrey">Juni&nbsp;DeYoung</h2>
 				  </div>
 				<!--End picture-->
 				</div>
@@ -284,7 +300,9 @@
 	<!-- End Left Column -->
     </div>
 
-    <!-- Right Column -->
+    <!-- <div class="w3-col s12 m5 l4"><p></p></div> -->
+	
+	<!-- Right Column -->
     <div class="w3-rest w3-margin-bottom">
     
       <!--Work Experience-->
