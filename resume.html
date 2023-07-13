@@ -3,40 +3,30 @@
 
 <head id="imports">
 <title>Resume</title>
-<style>
-    p {font-size: 14pt}
-	
-	body, html{
-		background-color: #3a3a3a;
-	}
-</style>
 <!--<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato&family=EB+Garamond'>
 <link rel="stylesheet" href="Common/homepage.css">-->
 <script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
+
+<style>
+    p {font-size: 14pt}
+	
+	<!-- body, html{
+		background-color: #3a3a3a;
+	} -->
+	
+	h1,h2,h3,h4,h5,h6 {
+		color: whitesmoke;
+	}
+</style>
 </head>
     
 <body>
 
 <script src="Common/script.js"></script>
 <script defer src="Common/hdr-ftr.js"></script>
-
-<!--<script>
-	window.onscroll = function() {myFunction()};
-
-	var stickr = document.getElementById("stickyDiv");
-	var sticky = stickr.offsetTop;
-
-	function myFunction() {
-	  if (window.pageYOffset < sticky) {
-		stickr.classList.remove("sticky");
-	  } else {
-		stickr.classList.add("sticky");
-	  }
-	}
-</script>-->
 
 <header id="app-header"></header>
     
@@ -309,22 +299,75 @@
 	  <div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round w3-margin-bottom">
         <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Work Experience</h2>
 		<div id="work" class="w3-container">	
-			<!--WITS Summer-->
-			<div class="w3-container w3-card w3-round w3-margin-bottom w3-hover-text-white" style="background-color:darkslategrey">
-			  <button onclick="hide_show('wits')" class="w3-button w3-block w3-round w3-hover-teal w3-left-align">
-			  <h5><b>Technical Assistant / Willamette Integrated Technology Services</b></h5>
-			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - Aug 2023</h6>
+			<!--FAST-->
+			<!--<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('fast')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Implementation Consultant / FAST Enterprises</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2023 - <span class="w3-tag w3-round" style="background-color:lightseagreen; color:darkslategrey">Current</span></h6>
 			  </button>
-			    <ul class="w3-large w3-hide" id="wits">
-				<li>Fixed technical issues in classroom equipment under direct supervision</li>
-				<li>Collaborated with two student employees and a supervisor to upgrade classroom equipment</li>
-				<li>Upgraded 18 teaching stations with new display switches, control systems, and A/V hardware</li>
-				<li>Set up and reimaged Mac and Windows computers using group policy</li>
-				<li>Maintained and upgraded network infrastructure, e.g. installing/replacing network cables and wireless access points</li>
-				<li>Responded to support tickets in Jira</li>
-			    </ul>
+			    <ul class="w3-large w3-hide" id="fast">
+				<li>Consulted with agencies to understand their business needs and how to implement the FAST software to best serve their customers</li>
+				<li>Clearly delivered information at both a high level and a technical level</li>
+				<li>Worked with a team of ??? people to problem-solve and respond quickly to changing project requirements and customer needs</li>
+				<li>Configured client-specific functionality to meet client agency’s unique requirements beyond out-of-the-box functionality, using built-in FAST tools as well as VB.Net and C#</li>
+				<li>Created and modified SQL queries to efficiently retrieve data from a relational database</li>
+				<li>Implemented new features, navigating them through testing and deployment</li>
+				<li>Maintained confidentiality and adhered to company policies along with relevant laws when exposed to protected client information</li>
+				<li>Relocated every 2-3 years to different project sites throughout the United States</li>
+				</ul>
 			</div>
 			<!--End Card-->
+			
+			<!--Aphrodite-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('aphrodite')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Research Assistant / Willamette University Computer Science <abbr title="Department">Dept.</abbr></b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - May 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="aphrodite">
+				<li>Developed an open-source Python script for gathering processor trace data from a RISC-V chip emulated in QEMU running on Ubuntu Linux</li>
+				<li>Wrote programs in RISC-V Assembly, using compilers and linkers to generate bare-metal executable files</li>
+				<li>Documented research process and findings using Markdown and GitHub</li>
+				<li>Presented research outcomes to audiences of 10-30 people</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			
+			<!--QUAD-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('quad')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Tutor / Willamette University QUAD center</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2023 - May 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="quad">
+				<li>Held open drop-in tutoring hours focusing on Mathematics and Computer Science topics</li>
+				<li>Facilitated one-on-one and group tutoring of 2-10 students</li>
+				<li>Assisted students in debugging Python programs, understanding problem sets, and exam study</li>
+				<li>Coached students' understanding of programming techniques and good software design practices</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			
+			<!--RA-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('ra')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Resident Advisor / Willamette University Residence Life and Housing</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - May 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="ra">
+				<li>Managed administrative duties such as fire safety checks, maintenance requests, and incident reports, as well as weekly staff meeting minutes and agendas</li>
+				<li>Served in a weekly on-call rotation, acting as the first layer of response to needs including but not limited to lockouts, medical emergencies, and facility/maintenance problems</li>
+				<li>Directed students to various university resources</li>
+				<li>Built and maintained a living learning community with 20+ residents through monthly active and passive programming</li>
+				<li>Enforced Housing policy, including quiet hours and the Student Code of Conduct</li>
+				<li>Assisted with opening and closing the dorms: completing room checks, filing maintenance reports, and other tasks to prepare the building for move-in</li>
+				<li>Mediated roommate conflicts in double rooms, triple suites, and four-person apartments</li>
+				<li>Supported residents in crisis situations, including mental health first aid such as QPR and Title IX-related concerns</li>
+				<li>Maintained confidentiality of protected student records and privacy of other personal information to the extent allowed and required by law, in particular, FERPA and required reporting responsibilities</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			
 			<!--Music Dept-->
 			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('msdpt')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
@@ -343,64 +386,6 @@
 				</ul>
 			</div>
 			<!--End-->
-			<!--RA-->
-			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
-			  <button onclick="hide_show('ra')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
-			  <h5><b>Resident Advisor / Willamette University Residence Life and Housing</b></h5>
-			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - May 2023</h6>
-			  </button>
-			    <ul class="w3-large w3-hide" id="ra">
-				<li>Managed administrative duties such as fire safety checks, maintenance requests, and incident reports, as well as weekly staff meeting minutes and agendas</li>
-				<li>Served in a weekly on-call rotation, acting as the first layer of response to needs including but not limited to lockouts, medical emergencies, and facility/maintenance problems</li>
-				<li>Directed students to various university resources</li>
-				<li>Built and maintained a living learning community with 20+ residents through monthly active and passive programming</li>
-				<li>Enforced Housing policy, including quiet hours and the Student Code of Conduct</li>
-				<li>Assisted with opening and closing the dorms: completing room checks, filing maintenance reports, and other tasks to prepare the building for move-in</li>
-				<li>Mediated roommate conflicts in double rooms, triple suites, and four-person apartments</li>
-				<li>Supported residents in crisis situations, including mental health first aid such as QPR and Title IX-related concerns</li>
-				</ul>
-			</div>
-			<!--End Card-->
-			<!--QUAD-->
-			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
-			  <button onclick="hide_show('quad')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
-			  <h5><b>Tutor / Willamette University QUAD center</b></h5>
-			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2023 - May 2023</h6>
-			  </button>
-			    <ul class="w3-large w3-hide" id="quad">
-				<li>Held open drop-in tutoring hours focusing on Mathematics and Computer Science topics</li>
-				<li>Facilitated one-on-one and group tutoring of 2-10 students</li>
-				<li>Assisted students in debugging Python programs, understanding problem sets, and exam study</li>
-				<li>Coached students' understanding of programming techniques and good software design practices</li>
-				</ul>
-			</div>
-			<!--End Card-->
-			<!--Aphrodite-->
-			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
-			  <button onclick="hide_show('aphrodite')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
-			  <h5><b>Research Assistant / Willamette University Computer Science <abbr title="Department">Dept.</abbr></b></h5>
-			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - May 2023</h6>
-			  </button>
-			    <ul class="w3-large w3-hide" id="aphrodite">
-				<li>Developed an open-source Python script for gathering processor trace data from a RISC-V chip emulated in QEMU running on Ubuntu Linux</li>
-				<li>Wrote programs in RISC-V Assembly, using compilers and linkers to generate bare-metal executable files</li>
-				<li>Documented research process and findings using Markdown and GitHub</li>
-				<li>Presented research outcomes to audiences of 10-30 people</li>
-				</ul>
-			</div>
-			<!--End Card-->
-			<!--MarCom Web-->
-			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
-			  <button onclick="hide_show('marcom')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
-			  <h5><b>Web Production Assistant / Willamette University Marketing and Communications</b></h5>
-			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Jan 2022</h6>
-			  </button>
-			    <ul class="w3-large w3-hide" id="marcom">
-				<li>Updated and maintained university Web pages using Cascade CMS and &nbsp;SiteImprove</li>
-				<li>Received tasks and instruction through Asana project management system</li>
-				</ul>
-			</div>
-			<!--End Card-->
 			
 			<!--Template-->
 			<!--<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
@@ -421,6 +406,34 @@
 		<h2 class="w3-text-light-grey w3-padding-16"><i class="fas fa-building fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Additional Work Experience</h2>
 		</button>
 		<div id="other" class="w3-container w3-hide">
+			<!--WITS Summer-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('wits')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-light-grey w3-left-align">
+			  <h5><b>Technical Assistant / Willamette Integrated Technology Services</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - Aug 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="wits">
+				<li>Fixed technical issues in classroom equipment under direct supervision</li>
+				<li>Collaborated with two student employees and a supervisor to upgrade classroom equipment</li>
+				<li>Upgraded 18 teaching stations with new display switches, control systems, and A/V hardware</li>
+				<li>Set up and reimaged Mac and Windows computers using group policy</li>
+				<li>Maintained and upgraded network infrastructure, e.g. installing/replacing network cables and wireless access points</li>
+				<li>Responded to support tickets in Jira</li>
+			    </ul>
+			</div>
+			<!--End Card-->
+			<!--MarCom Web-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('marcom')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Web Production Assistant / Willamette University Marketing and Communications</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Jan 2022</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="marcom">
+				<li>Updated and maintained university Web pages using Cascade CMS and &nbsp;SiteImprove</li>
+				<li>Received tasks and instruction through Asana project management system</li>
+				</ul>
+			</div>
+			<!--End Card-->
 			<!--Discord-->
 			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
 			  <button onclick="hide_show('discord')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
@@ -428,9 +441,11 @@
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 - May 2021</h6>
 			  </button>
 			    <ul class="w3-large w3-hide" id="discord">
+				<p style="text-align: center; margin-right: 56px;"><em>The paid portion of this work was completed in May 2021, however, limited responsibilities were maintained on a volunteer basis until May 2023.</em></p>
 				<li>Proposed, developed, and implemented a Discord server for Computer Science students to use during the COVID crisis as a learning and social resource</li>
 				<li>Enforced server rules and policies, working with a team of 1-2 other moderators</li>
 				<li>Maintained a sense of community by making semi-regular posts and engaging in conversation with 50-60 server members</li>
+				<li>Documented server structure and procedures for future server admins</li>
 				</ul>
 			</div>
 			<!--End Card-->
@@ -678,6 +693,16 @@
 				  <h5><b>Research Seminar in Mathematics</b></h5>
 				  </button>
 					<p class="w3-hide w3-margin" id="thesis">Students complete their Mathematics senior thesis project under the mentorship of a departmental faculty member. Weekly meetings include peer teaching, study of new problems, presentation of progress on research plans, and practice with mathematical communication skills. The course culminates in a written paper and a formal oral presentation.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Course Template-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('fundDS')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Fundamentals of Data Science</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="fundDS">Students will be introduced to concepts, techniques, and tools they need to solve practical problems arising in various fields. Specific topics include: 1) ethical issues, 2) data collection, cleaning, and exploratory analysis, 3) machine learning algorithms (including: regression, classification, and clustering), 4) predictive modeling, 5) data visualization, and 6) effective communication.</p>
 				</div>
 				
 				<!--End Card-->

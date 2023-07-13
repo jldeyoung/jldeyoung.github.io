@@ -16,12 +16,12 @@ a:hover{
 	color: slategrey;
 }
 
-h1,h2,h3,h4,h5,h6:hover {
+/* h1,h2,h3,h4,h5,h6:hover {
 	color: white;
-}
+} */
     
 body {
-    font-size: 14pt;
+    font-size: 16pt;
     color: whitesmoke;
     background-color: darkslategrey;
     text-align: left;
