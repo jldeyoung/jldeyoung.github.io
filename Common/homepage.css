@@ -24,7 +24,7 @@ body {
     font-size: 16pt;
     color: whitesmoke;
     background-color: darkslategrey;
-    text-align: left;
+    text-align: justify;
 }
 
 p, button, li {
