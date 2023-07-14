@@ -27,6 +27,29 @@
 
 <script defer src="Common/hdr-ftr.js"></script>
 
+<script>
+	/* On small screens, scroll past stickyDiv */
+	window.onscroll = function() {myFunction()};
+	
+	// Get the sticky card
+	var stkDiv = document.getElementById("stickyDiv");
+
+	// Get the offset position of the navbar
+	var sticky = stkDiv.offsetTop;
+
+	// Add the sticky class to stickyDiv when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function myFunction() {
+	  if (window.innerWidth < 601 && (document.body.scrollTop < 740 && document.documentElement.scrollTop < 740)) {
+		if(stkDiv.className.indexOf("sticky") == -1){
+			stkDiv.className += " sticky";
+		}
+	  } else {
+		alert("else statement");
+		stkDiv.className.replace(" sticky", "");
+	  }
+	}
+</script>
+
 <header id="app-header"></header>
     
 <!-- Page Container -->
@@ -36,7 +59,7 @@
   <div class="w3-row-padding" style="padding-top: 40px"
   
     <!-- Left Column -->
-    <div class="w3-col s12 m5 l4 w3-margin-right sticky" id="stickyDiv">
+    <div class="w3-col s12 m5 l4 w3-margin-right w3-show sticky" id="stickyDiv">
         
 		
 		<!--Cards container-->
