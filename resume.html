@@ -27,29 +27,6 @@
 
 <script defer src="Common/hdr-ftr.js"></script>
 
-<script>
-	/* On small screens, scroll past stickyDiv */
-	window.onscroll = function() {myFunction()};
-	
-	// Get the sticky card
-	var stkDiv = document.getElementById("stickyDiv");
-
-	// Get the offset position of the navbar
-	var sticky = stkDiv.offsetTop;
-
-	// Add the sticky class to stickyDiv when you reach its scroll position. Remove "sticky" when you leave the scroll position
-	function myFunction() {
-	  if (window.innerWidth < 601 && (document.body.scrollTop < 740 && document.documentElement.scrollTop < 740)) {
-		if(stkDiv.className.indexOf("sticky") == -1){
-			stkDiv.className += " sticky";
-		}
-	  } else {
-		alert("else statement");
-		stkDiv.className.replace(" sticky", "");
-	  }
-	}
-</script>
-
 <header id="app-header"></header>
     
 <!-- Page Container -->
@@ -311,6 +288,33 @@
 	  
 	<!-- End Left Column -->
     </div>
+	
+	<script>
+		/* On small screens, scroll past stickyDiv */
+		window.onscroll = function() {myFunction()};
+		window.onload = function() {myFunction()};
+		
+		// Get the sticky card
+		var stkDiv = document.getElementById("stickyDiv");
+		
+		console.log(stkDiv.innerHTML);
+
+		// Get the offset position of the navbar
+		var sticky = stkDiv.offsetTop;
+
+		// Add the sticky class to stickyDiv when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.innerWidth < 601 && (document.body.scrollTop < 740 && document.documentElement.scrollTop < 740)) {
+			if(stkDiv.className.indexOf("sticky") == -1){
+				stkDiv.className += " sticky";
+			}
+		  } else {
+			console.log(stkDiv.className);
+			stkDiv.className.replace(" sticky", "");
+			console.log(stkDiv.className);
+		  }
+		}
+	</script>
 
     <!-- <div class="w3-col s12 m5 l4"><p></p></div> -->
 	
@@ -463,7 +467,7 @@
 			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 - May 2021</h6>
 			  </button>
 			    <ul class="w3-large w3-hide" id="discord">
-				<p style="text-align: center; margin-right: 56px;"><em>The paid portion of this work was completed in May 2021, however, limited responsibilities were maintained on a volunteer basis until May 2023.</em></p>
+				<p style="text-align: center; margin-right: 56px;"><em>The paid portion of this work was completed in May 2021, however, some administrative and moderation responsibilities were maintained on a volunteer basis until May 2023.</em></p>
 				<li>Proposed, developed, and implemented a Discord server for Computer Science students to use during the COVID crisis as a learning and social resource</li>
 				<li>Enforced server rules and policies, working with a team of 1-2 other moderators</li>
 				<li>Maintained a sense of community by making semi-regular posts and engaging in conversation with 50-60 server members</li>
