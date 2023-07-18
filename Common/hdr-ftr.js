@@ -48,7 +48,7 @@ let imports = `
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=EB+Garamond">
 	<script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="Common/homepage.css">
+	<link rel="stylesheet" href="/Common/homepage.css">
 `;
 
 let i = document.getElementById("imports");
