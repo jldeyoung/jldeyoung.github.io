@@ -33,7 +33,7 @@
 
 	/* First image (Logo. Full height) */
 	.bgimg-1 {
-	  background-image: url('Images/recital.jpg');
+	  background-image: url('Images/JLD_0040.jpg');
 	  min-height: 800px;
 	}
 
@@ -115,10 +115,61 @@
 	<a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank">YouTube channel</a>.</p>
   
   <div class="w3-row">
-    <div class="w3-col m3 w3-center w3-padding-large">
-      <!--<b><i class="fa fa-user w3-margin-right"></i>Juni L DeYoung</b><br>-->
-      <img src="Images/headshot-2.jpg" class="w3-round w3-image" alt="Headshot" width="250">
-    </div>
+    <!--<div class="w3-col m3 w3-center w3-padding-large">
+      <img src="Images/headshot-4.jpg" class="w3-round w3-image" alt="Headshot" width="250">
+    </div>-->
+	
+	 <!-- Slideshow container -->
+	<div class="slideshow-container w3-col m3 w3-center w3-padding-large">
+
+	  <!-- Full-width images with number and caption text -->
+	  <div class="mySlides fade">
+		<div class="numbertext">1 / 6</div>
+		<img src="Images/headshot-4.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">2 / 6</div>
+		<img src="Images/headshot-6.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">3 / 6</div>
+		<img src="Images/headshot-1.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides fade">
+		<div class="numbertext">4 / 6</div>
+		<img src="Images/headshot-2.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides fade">
+		<div class="numbertext">5 / 6</div>
+		<img src="Images/headshot-3.jpg" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides fade">
+		<div class="numbertext">6 / 6</div>
+		<img src="Images/headshot-5.jpg" style="width:100%">
+	  </div>
+
+	  <!-- Next and previous buttons -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	  
+	  <!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		  <span class="dot" onclick="currentSlide(4)"></span>
+		  <span class="dot" onclick="currentSlide(5)"></span>
+		  <span class="dot" onclick="currentSlide(6)"></span>
+		</div> 
+	</div>
+	<!-- <br> -->
+	
+	<script>showSlides(1);</script>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m9 w3-hide-small">
@@ -314,9 +365,10 @@
 			<a href="https://youtu.be/BR_1VtQdF34" target="_blank">music video</a>. <!--Find more details in my blog!-->
 		</p>
 		
-		<div class="w3-center"><button class="w3-button w3-center w3-padding w3-teal" id="myBtn" onclick="hide_show('phiGal');">Image Gallery</button>
+		<div class="w3-center">
+			<!-- <button class="w3-button w3-center w3-padding w3-teal" id="myBtn" onclick="hide_show('phiGal');">Image Gallery</button> -->
 			
-			<div class="w3-container w3-hide" id="phiGal">
+			<div class="w3-container" id="phiGal">
 				<p class="w3-center"><em>Click on the images to make them bigger.</em></p>
 			  
 				  <!--Responsive Grid-->

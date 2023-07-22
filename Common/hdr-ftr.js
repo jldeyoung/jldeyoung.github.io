@@ -6,23 +6,23 @@ let appHeader = `
     </a>
 	  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
 		<a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-		<a href="/index.html#home" class="w3-bar-item w3-button"> HOME</a>
-		<a href="/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-		<a href="/index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
-		<a href="/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-		<a href="/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
-		<a href="/Blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
+		<a href="/jldeyoung.github.io/index.html#home" class="w3-bar-item w3-button"> HOME</a>
+		<a href="/jldeyoung.github.io/index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+		<a href="/jldeyoung.github.io/index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-folder"></i> PORTFOLIO</a>
+		<a href="/jldeyoung.github.io/index.html#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+		<a href="/jldeyoung.github.io/resume.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> RESUME</a>
+		<a href="/jldeyoung.github.io/blog/index.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> BLOG</a>
 	  </div>
 	</div>
 	
 	<!-- Navbar on small screens -->
 	  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-		<a href="/index.html#home" class="w3-bar-item w3-button"> HOME</a>
-		<a href="/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-		<a href="/index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-		<a href="/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-		<a href="/resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
-		<a href="/Blog/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
+		<a href="/jldeyoung.github.io/index.html#home" class="w3-bar-item w3-button"> HOME</a>
+		<a href="/jldeyoung.github.io/index.html#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+		<a href="/jldeyoung.github.io/index.html#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+		<a href="/jldeyoung.github.io/index.html#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+		<a href="/jldeyoung.github.io/resume.html" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+		<a href="/jldeyoung.github.io/blog/index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">BLOG</a>
 		<!--<a href="#" class="w3-bar-item w3-button">SEARCH</a>-->
 	  </div>
 `;
@@ -48,7 +48,7 @@ let imports = `
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=EB+Garamond">
 	<script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="/Common/homepage.css">
+	<link rel="stylesheet" href="/jldeyoung.github.io/Common/homepage.css">
 `;
 
 let i = document.getElementById("imports");
