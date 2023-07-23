@@ -5,15 +5,6 @@ date:   2023-05-04 13:39:08 -0700
 categories: blog research crvgs
 ---
 
-<style>
-	img {
-	  display: block;
-	  margin-left: auto;
-	  margin-right: auto;
-	  width: 400px;
-	}
-</style>
-
 ![A diagram showing a graph and corner rectangle visibility representation](/blog/images/scrvg-tree.png "A tree and its SCRVG representation")
 
 ## Abstract
