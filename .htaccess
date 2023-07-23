@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^/Blog/$
-RewriteRule ^(.*)$ "/blog/$1" [R=301,L]

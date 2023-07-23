@@ -37,6 +37,9 @@ minima:
         - { platform: youtube,  user_url: "https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" }
 plugins:
   - jekyll-feed
+  # - jekyll-redirect-from
+# whitelist:
+  # - jekyll-redirect-from
 
 # Exclude from processing.
 # The following items will not be processed, by default.
