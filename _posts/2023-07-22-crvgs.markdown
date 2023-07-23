@@ -5,16 +5,33 @@ date:   2023-05-04 13:39:08 -0700
 categories: blog research crvgs
 ---
 
+<style>
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 400px;
+	}
+</style>
+
+![A diagram showing a graph and corner rectangle visibility representation](/blog/images/scrvg-tree.png "A tree and its SCRVG representation")
+
 ## Abstract
 
 Corner rectangle visibility graphs (CRVGs) combine two existing lines of inquiry in graph theory: rectangle visibility graphs (RVGs) and rectangle-of-influence graphs (RIGs). An RVG uses vertical and horizontal bands of sight between axis-parallel rectangles in the plane to construct a graph whose vertices and edges correspond to rectangles and visibility bands respectively. RIGs are a straight-line embedding of a graph, where edges can be represented as empty axis-parallel rectangles of influence with adjacent vertices at opposing corners of the RI.
+
 We define CRVGs by giving each rectangle a single eye in its corner and defining visibility relations accordingly. We prove that families of graphs, including paths, cycles, wheels, trees, \\(k\\)-partite graphs up to \\(k=4\\), and complete graphs \\(K_n\\) for \\(n \\leq 5\\) are representable by corner rectangle diagrams.
+
 Our work further analyzes the maximum number of edges \\(e\\) that can be drawn in restricted CRVG representations: (1) where all rectangles look the same direction (SCRVGs), \\(e=\\left[\\frac{n^2}{4}\\right]+n-2\\); and (2) where all rectangles look in orthogonal directions (SWCRVGs), \\(e=\\left[\\frac{n^2}{3}+\\frac{n}{3}\\right]-1\\).
+
+![A diagram showing a corner rectangle and its visibility region](/blog/images/Definition-R_A-U_B-1.png "The definition of a corner rectangle and visibility region")
 
 ## Full Text
 
 Find the full text of the paper, written by myself, Lani Southern, and Jayden Li,
 supervised by Professor Josh Laison, in [this PDF](/blog/CRVGs-paper.pdf).
+
+![A diagram showing corner rectangles and rectangles of influence](/blog/images/Defn-vis-rect-of-inf.png "Corner rectangle visibility is related to rectangles of influence")
 
 ## Presentation
 
