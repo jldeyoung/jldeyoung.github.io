@@ -48,11 +48,11 @@ https://pulp-platform.org/docs/riscv_workshop_zurich/schiavone_wosh2019_tutorial
 
 Adding PATH variables
 
-- export PATH=$PATH:/opt/riscv/bin
-- echo PATH before and after changes
+- `export PATH=$PATH:/opt/riscv/bin`
+- `echo PATH` before and after changes
 - save PATH before changing it (in case of bricked systems)
-	- export OLDPATH=$PATH
-	- echo $PATH >oldpath.txt
+	- `export OLDPATH=$PATH`
+	- `echo $PATH >oldpath.txt`
 
 - get *either* 32-bit or 64-bit working with *some* extensions
 	- focus on 32-bit, no extensions rv32i
@@ -63,18 +63,26 @@ Adding PATH variables
 
 adding to PATH
 	
-- old path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+- old path: `/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin`
+
+```	
+$ export PATH=$PATH:/opt/riscv/bin
+```
 	
-	$ export PATH=$PATH:/opt/riscv/bin
+PATH modified successfully.
 	
-	PATH modified successfully.
-	
-	$ ./configure --prefix=/opt/riscv
-		- this is telling me that there is no such file or directory as 
-		  'configure'---did I add the wrong thing to PATH?
-			-> try changing the PATH addition to the directory of the 
-			   installation
-	$ make linux
+```
+$ ./configure --prefix=/opt/riscv
+```
+
+- this is telling me that there is no such file or directory as 
+  'configure'---did I add the wrong thing to PATH?
+	- -> try changing the PATH addition to the directory of the 
+	   installation
+
+```
+$ make linux
+```
 
 ### 2022-06-21
 
@@ -90,7 +98,7 @@ It did not complete successfully. I ~~may~~ have run out of disk space.
 
 New vm created, with 100GB disk space. Here's hoping.
 
-[If this still doesn't work, try appending /opt/riscv/bin to the *beginning* 
+[If this still doesn't work, try appending `/opt/riscv/bin` to the *beginning* 
 of PATH, not the end.]
 
 IT WORKED!!!
@@ -170,11 +178,10 @@ IMMEDIATE GOAL: emulate the RISC-V ISA and run Linux.
 1. Verify qemu works with a bare-metal C program
 2. Try running Linux on the virt RISC-V
 
-https://jasonblog.github.io/note/arm_emulation/hello_world_for_bare_metal_arm_using_qemu.html
-I took this test program as an example of C written for bare metal.
+I took [this test program](https://jasonblog.github.io/note/arm_emulation/hello_world_for_bare_metal_arm_using_qemu.html) as an example of C written for bare metal.
 
 Task 1. was proving too much to wrap my head around today, so I went back to 
-https://wiki.qemu.org/Documentation/Platforms/RISCV#Booting_64-bit_Fedora
+the [QEMU docs](https://wiki.qemu.org/Documentation/Platforms/RISCV#Booting_64-bit_Fedora)
 to try and boot Fedora. Lo and behold, I got it to work, with one minor 
 alteration (*RULE #1, never trust the README*):
 
@@ -388,13 +395,13 @@ In accordance with this, I changed line 5 of `hello.s` to be
 	lui t0, 0x10000
 
 since that is the line that loads our UART0 address into register t0. As noted 
-in [my annotations of this assembly](/src/Assembly_Hello/riscv-hello-asm_annotated), 
+in [my annotations of this assembly](https://github.com/wu-jldeyoung/Aphrodite/blob/main/src/Assembly_Hello/riscv-hello-asm_annotated.txt), 
 `lui` loads the given 20-bit immediate into the upper 20 bits of the destination 
 register `rd`, in this case, `t0`.
 
-**EXIT QEMU: 'Ctrl+A' then 'x'**
+**EXIT QEMU: `Ctrl+A` then `x`**
 
-To run the program, I had to change the [Makefile](/src/Assembly_Hello/Makefile) 
+To run the program, I had to change the [Makefile](https://github.com/wu-jldeyoung/Aphrodite/blob/main/src/Assembly_Hello/Makefile) 
 so that it would invoke my Linux glibc multilib cross-compiler rather than the 
 Newlib 32-bit cross-compiler used in the example:
 
@@ -599,7 +606,7 @@ Thus,
 
 	qemu-system-riscv64 -machine virt -kernel ~/Desktop/riscv-hello-world/asm/hello -monitor stdio -s -S -d cpu -D ./hello_log.txt
 
-produces the log [hello.txt](/hello_log.txt). A similar effect can be achieved with 
+produces the log [hello.txt](https://github.com/wu-jldeyoung/Aphrodite/blob/main/hello_log.txt). A similar effect can be achieved with 
 `logfile ./hello_log.txt` in the monitor.
 
 ### 2022-07-25
@@ -674,7 +681,7 @@ interactive child processes.](https://pexpect.readthedocs.io/en/latest/FAQ.html#
 Instead, we'll use [the `pexpect` package.](https://pexpect.readthedocs.io/en/latest/index.html)
 
 This is ***so*** much easier to work with than `subprocess` was. I *already* 
-have [a small QEMU-formatted trace](/src/utils/qtrace_first.txt), after about 20 
+have [a small QEMU-formatted trace](https://github.com/wu-jldeyoung/Aphrodite/blob/main/src/utils/qtrace_first.txt), after about 20 
 minutes of reading and 2 minutes of writing a couple lines of code.
 
 #### 2022-08-02
