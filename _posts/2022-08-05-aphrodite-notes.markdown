@@ -33,6 +33,7 @@ dependencies:
 ### 2022-06-10
 
 https://youtu.be/27tndT6cBH0
+
 https://pulp-platform.org/docs/riscv_workshop_zurich/schiavone_wosh2019_tutorial.pdf
 
 - energy-efficient, open-source programmable microcontroller

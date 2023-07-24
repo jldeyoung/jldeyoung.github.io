@@ -5,6 +5,12 @@ date:   2023-03-23 13:03:04 -0700
 categories: blog research aphrodite
 ---
 
+<style>
+	img {
+		width: 600px;
+	}
+</style>
+
 # Aphrodite: Security Properties of RISC-V
 
 [![A flowchart of how Aphrodite works](/blog/images/aphrodite-flowchart.png "How Aphrodite works")](/blog/Aphrodite.pdf)
@@ -39,9 +45,9 @@ Our guiding question for this research is, "What are security-relevant propertie
 
 To answer that question, we have to **collect** data, **analyze** that data, and **report** the results.
 
-What we want to analyze what data the processor is holding, and where it’s holding those values. The key here is that we don’t want to change any of those values, so we have to “look in” from the outside without using the hardware to tell us what values it contains. It would be hard to do this on an actual physical computer chip, so we want to model our processor in software. As a result, we can print those values to the “host” machine without changing them. 
+We want to analyze **what** data the processor is holding, and **where** it’s holding those values. The key here is that we don’t want to change any of those values, so we have to “look in” **from the outside** without using the hardware to tell us what values it contains. It would be hard to do this on an actual physical computer chip, so we want to **model** our processor in software. As a result, we can **print** those values from internal data structures to the “host” machine without changing them. 
 
-The next step is data analysis. We use a technique called “data mining” to find out what the properties are. Then, we can check them against common security weaknesses, which have been studied and enumerated for a long time.
+The next step is **data analysis**. We use a technique called “data mining” to find out what the processor's *properties* are. Then, we can check them against **common security weaknesses**, which have been studied and enumerated for a long time by people far smarter than me.
 
 Finally, we have found security properties that we can now report! That's this talk!
 
@@ -89,22 +95,24 @@ The [**RISC-V specification**](https://riscv.org/technical/specifications/) is a
 
 If any of the standards in the spec aren’t observed in practice, that might have security implications—they’re the implicit and explicit security agreements we’re looking for.
 
-	.global _start			# Initialize the program at “_start” label
+```assembly
+.global _start			# Initialize the program at “_start” label
 
-	_start:
+_start:
 
-		lui t0, 0x10000		# Load address of serial port into register t0
+	lui t0, 0x10000		# Load address of serial port into register t0
 
-		andi t1, t1, 0		# Zero out t1
-		addi t1, t1, 72		# Add (int)‘H’ = 72 to t1
-		sw t1, 0(t0)		# Send value of t1 == ‘H’ to location addressed by t0 (UART0)
+	andi t1, t1, 0		# Zero out t1
+	addi t1, t1, 72		# Add (int)‘H’ = 72 to t1
+	sw t1, 0(t0)		# Send value of t1 == ‘H’ to location addressed by t0 (UART0)
 
-					# The previous three lines are repeated for 
-		[...]			# ‘e’,‘l’,’l’,’o’ and finally 
-					# LF (line feed, aka ‘\n’)
+				# The previous three lines are repeated for 
+	[...]			# ‘e’,‘l’,’l’,’o’ and finally 
+				# LF (line feed, aka ‘\n’)
 
-	finish:
-		beq t1, t1, finish	# Jump to label finish if t1==t1
+finish:
+	beq t1, t1, finish	# Jump to label finish if t1==t1
+```
 
 The above program is written in RISC-V assembly and prints the string `"Hello"` to the UART0 serial port (which corresponds loosely to the high-level stdout). Each character is represented by its ASCII numerical value, since hardware doesn’t know what a character literal is, much less an entire string. The program ends with an infinite loop to prevent it from accessing memory locations it shouldn’t. Hardware doesn’t automatically know when to stop executing a program (like in high-level languages), so if you aren’t careful, your program might start reading memory locations that aren’t actually instructions—called a “memory leak.” That, of course, is a security weakness in software rather than in hardware, therefore not directly related to our research, but still useful to note.
 
@@ -114,20 +122,20 @@ We feed an executable into Aphrodite, a Python script that runs QEMU and uses QE
 
 At this point in the process, I had two different types of traces to work with: the output directly from native QEMU tools on the left, and the Daikon input format on the right. Notice the irrelevant data on the left, and that the qtrace register values are fixed-width hexadecimal fields, but Daikon works in decimal.
 
-	i\x1b[K\x1b[Din\x1b[K\[...]			..tick():::ENTER
-	pc   	0000000000001000\r			this_invocation_nonce
-	mhartid  0000000000000000\r			1
-	[...]						pc
-	x0/zero 0000000000000000 			4096
-	x1/ra 0000000000000000 				1
-	x2/sp 0000000000000000 				mhartid
-	x3/gp 0000000000000000\r			0
-	[...]						1
-	f28/ft8 0000000000000000 			[...]
-	f29/ft9 0000000000000000 			f31/ft11
-	f30/ft10 0000000000000000 			0
-	f31/ft11 0000000000000000\r			1
-	[...]						[...]
+	i\x1b[K\x1b[Din\x1b[K\[...]		..tick():::ENTER
+	pc   	0000000000001000\r		this_invocation_nonce
+	mhartid  0000000000000000\r		1
+	[...]					pc
+	x0/zero 0000000000000000		4096
+	x1/ra 0000000000000000 			1
+	x2/sp 0000000000000000 			mhartid
+	x3/gp 0000000000000000\r		0
+	[...]					1
+	f28/ft8 0000000000000000		[...]
+	f29/ft9 0000000000000000		f31/ft11
+	f30/ft10 0000000000000000 		0
+	f31/ft11 0000000000000000\r		1
+	[...]					[...]
 
 Here’s some pseudocode describing Aphrodite’s behavior. We take the string output from QEMU and parse it for register name/value pairs, at this stage in a single string containing both label and value.
 Next, we make sure that we actually had novel register values in the output, since sometimes the script runs faster than QEMU can update, and sometimes the output will just be noise, so this check avoids unspecified behavior.
@@ -150,22 +158,22 @@ Here’s a snippet of the actual Python code that parses register values and wri
 The FOR loop on the bottom juggles our name/value Strings into name/value pairs, does the necessary conversions, then writes it in the Daikon-approved input format.
 
 ```python
-	# find all register name/value pairs on current line
-	# returns empty list if no register values found,
-	# i.e. the output was not a string of register/value pairs
-	vals = re.findall(r"[a-z0-9/]+\s+[0-9a-f]{16}|\w+\s+[0-9a-f]x[0-9a-f]",out)
-	
-	[...]
-	
-		# Parse register/value pairs into lists
-		for reg in vals:
-			reg_val = re.split("\s+",reg)
-			# hex string to int: `int("ff",16)` -> 255
-			reg_val[1] = int(reg_val[1],16)
-			# register name\n value \n constant 1
-			dt.write(reg_val[0]+"\n"+str(reg_val[1])+"\n1\n")
-			# for copying these values into the tick exit
-			tpoint.append(reg_val)
+# find all register name/value pairs on current line
+# returns empty list if no register values found,
+# i.e. the output was not a string of register/value pairs
+vals = re.findall(r"[a-z0-9/]+\s+[0-9a-f]{16}|\w+\s+[0-9a-f]x[0-9a-f]",out)
+
+[...]
+
+	# Parse register/value pairs into lists
+	for reg in vals:
+		reg_val = re.split("\s+",reg)
+		# hex string to int: `int("ff",16)` -> 255
+		reg_val[1] = int(reg_val[1],16)
+		# register name\n value \n constant 1
+		dt.write(reg_val[0]+"\n"+str(reg_val[1])+"\n1\n")
+		# for copying these values into the tick exit
+		tpoint.append(reg_val)
 ```
 
 Now we have our trace, and the `.decls` file that tells Daikon what it’s looking for, constructed separately. These are both the pieces we need to run Daikon and look at **actual observed properties** of the RISC-V architecture.
