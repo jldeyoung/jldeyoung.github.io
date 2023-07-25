@@ -233,7 +233,7 @@ of research (ISA level).*
 
 Microcoding allows emulation of wider word length---
 **allowing greater compatibility between different products in a family**
----but so does the RISC-V standard
+---but so does the RISC-V *standard*
 
 RISC is better from a CS standpoint, CISC is better for the e. engineers
 and the physicists.
@@ -844,7 +844,7 @@ hours).
 After much debugging, I was able to get Aphrodite to successfully boot Linux. 
 Much to my surprise, the boot process completed in less than an hour, and I was 
 able to log in and do a couple basic shell commands at the terminal, before 
-engaging the shutdown sequence. This resulted in [a 15.7 MB trace](src/utils/trace/20220805-181853.dtrace) 
+engaging the shutdown sequence. This resulted in [a 15.7 MB trace](https://github.com/wu-jldeyoung/Aphrodite/blob/main/src/utils/20220801-151842.dtrace) 
 that contains 6,484 program points.
 
 ## Next Steps
