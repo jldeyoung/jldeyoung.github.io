@@ -1,0 +1,749 @@
+<!--<!DOCTYPE html>
+<html>
+
+<head id="imports">
+<title>Resume</title>
+<!--<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato&family=EB+Garamond'>
+<link rel="stylesheet" href="Common/homepage.css">
+<script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
+-->
+
+---
+layout: base
+title: Resume
+permalink: /resume/
+---
+
+<style>
+    p {font-size: 0.875em}
+	
+	<!-- body, html{
+		background-color: #3a3a3a;
+	} -->
+	
+	h1,h2,h3,h4,h5,h6 {
+		color: whitesmoke;
+	}
+</style>
+<!-- </head> -->
+    
+<body>
+
+<script defer src="Common/hdr-ftr.js"></script>
+
+<!-- <header id="app-header"></header> -->
+    
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding" style="padding-top: 40px"
+  
+    <!-- Left Column -->
+    <div class="w3-col s12 m5 l4 w3-margin-right sticky" id="stickyDiv">
+        
+		
+		<!--Cards container-->
+		<div class="w3-blue-grey w3-round w3-padding" style="margin-right: -8px">
+		  
+		  <!--Contact card-->
+		  <div class="w3-container w3-card w3-round-large w3-padding-small w3-margin-bottom" style="background-color:darkslategrey">
+			  <!--Picture-->
+			  <div class="w3-text-medium-gray w3-round-xlarge w3-margin-bottom">
+				<div class="w3-display-container w3-round-large" style="overflow: hidden; width: 100%">
+				  <img src="Images/headshot-math-square.jpg" alt="Headshot" style="width: 100%">
+				  <div class="w3-display-bottomleft" style="margin-left:10px">
+					<h2 class="w3-opacity-min w3-padding-small w3-round-xlarge" style="color:lightseagreen; background-color:darkslategrey">Juni&nbsp;DeYoung</h2>
+				  </div>
+				<!--End picture-->
+				</div>
+			  </div>
+			  
+			  <button onclick="hide_show('contact')" class="w3-button w3-large w3-round w3-block w3-left-align w3-hover-teal w3-hover-text-light-grey" style="color:lightseagreen"><b><i class="fa fa-address-card fa-fw w3-margin-right"></i><span style="color:white">Contact</span></b></button>
+			  <div id="contact" class="w3-container w3-hide">
+			  <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Recent Grad</p>
+			  <p><i class="fa fa-home fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i>Boulder, CO</p>
+			  <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i><a href="mailto:jldeyoung@live.com">jldeyoung@live.com</a></p>
+			  <p><i class="fa fa-github fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i><a href="https://github.com/wu-jldeyoung" target="_blank">GitHub/wu-jldeyoung</a></p>
+			  <p><i class="fa fa-phone fa-fw w3-margin-right w3-large" style="color:lightseagreen"></i><a href="tel:7203643657">(720)364-3657</a> </p>
+			  </div>
+		  </div>
+		  <!--end contact-->
+		  
+		   <!--Skills-->
+		   <div class="w3-medium w3-card-4 w3-padding-small w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			<button onclick="hide_show('skills')" class="w3-button w3-large w3-round w3-block w3-left-align w3-hover-teal w3-hover-text-light-grey" style="color:lightseagreen"><b><i class="fa fa-asterisk fa-fw w3-margin-right"></i><span style="color:white">Skills</span></b></button>
+			<div id="skills" class="w3-container w3-hide">
+          
+			<button onclick="hide_show('pgm-lang')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Programming and Markup Languages</button>
+				<div id="pgm-lang" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+				<ul>
+				<li>Java</li>
+					<ul>
+					<li>JavaFX</li>
+					<li>Processing</li>
+					</ul>
+				<li>C</li>
+				<li>Python</li>
+					<ul>
+						<li>iPython, Jupyter Notebooks</li>
+						<li>Pandas</li>
+						<li>Matplotlib</li>
+						<li>numPy</li>
+						<li>symPy</li>
+					</ul>
+				<li>Assembly</li>
+					<ul>
+					<li>RISC-V</li>
+					</ul>
+				<li>Markdown</li>
+					<ul>
+						<li>GitHub-Flavored Markdown</li>
+					</ul>
+				<li><span class="latex" style="font-size: 1em;">L<sup style="text-transform: uppercase; font-size: 0.85em;
+		  vertical-align: -0.2em; margin-left: -0.36em; margin-right: -0.15em;">a</sup>T<sub style="text-transform: uppercase; vertical-align: -0.05ex; margin-left: -0.1667em; margin-right: -0.125em;">e</sub>X</span></li>
+				<ul><li>Beamer</li></ul>
+				<li>HTML, CSS, JavaScript</li>
+					<ul>
+					<li>w3-css</li>
+					<li>Jekyll</li>
+					</ul>
+				</ul>
+				</div>
+			
+			<button onclick="hide_show('sft-dev')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Software Development</button>
+				<div id="sft-dev" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+				<ul>
+				<li>Agile development/Scrum</li>
+				<li>Unix/shell commands</li>
+				<li>Git/<a href="https://github.com/wu-jldeyoung">GitHub</a></li>
+				<li>Cascade CMS</li>
+				</ul>
+				</div>
+			
+			<button onclick="hide_show('os')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Operating Systems</button>
+				<div id="os" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+				<ul>
+				<li>Windows</li>
+				<ul>
+					<li>11</li>
+					<li>10</li>
+					<li>7</li>
+					<li>XP</li>
+				</ul>
+				<li>Linux</li>
+					<ul>
+						<li>Ubuntu 20.04</li>
+						<li>Fedora</li>
+					</ul>
+				</ul>
+				</div>
+			
+			<button onclick="hide_show('gis')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">GIS</button>
+				<div id="gis" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+				<ul>
+				<li>ArcGIS</li>
+				<li>QGIS</li>
+				</ul>
+				</div>
+			
+			<button onclick="hide_show('media')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Media</button>
+				<div id="media" class="w3-container w3-hide">
+				<ul>
+					<button onclick="hide_show('av')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Audio/Video</button>
+						<div id="av" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+						<ul>
+						<li>Ableton Live</li>
+						<li>Audacity</li>
+						<li>Logic</li>
+						<li>HitFilm</li>
+						<li><abbr title="Open Broadcaster Software">OBS</abbr></li>
+						</ul>
+					</div>
+					<button onclick="hide_show('photo')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Photo/Illustration</button>
+						<div id="photo" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+						<ul>
+						<li>paint.NET</li>
+						<li>GIMP</li>
+						<li>Darktable</li>
+						</ul>
+						</div>
+					<button onclick="hide_show('adobe')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Adobe</button>
+						<div id="adobe" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+						<ul>
+						<li>Acrobat Pro</li>
+							<ul>
+								<li>Fillable PDF forms</li>
+							</ul>
+						<li>Photoshop</li>
+						<li>Illustrator</li>
+						<li>InDesign</li>
+						</ul>
+						</div>
+				</ul>
+				</div>
+			<button onclick="hide_show('msft-office')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Microsoft Office</button>
+				<div id="msft-office" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+				<ul>
+				<li>Word</li>
+				<li>Excel</li>
+				<li>Powerpoint</li>
+				<li>Publisher</li>
+				</ul>
+				</div>
+			<button onclick="hide_show('drive')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Google Drive</button>
+				<div id="drive" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+				<ul>
+				<li>Docs</li>
+				<li>Sheets</li>
+				<li>Forms</li>
+				<li>Slides</li>
+				<li>Calendar</li>
+				<li>Colaboratory</li>
+				<li>Drawings</li>
+				<li>My Maps</li>
+				</ul>
+				</div>
+			<button onclick="hide_show('comm')" class="w3-button w3-round w3-block w3-left-align w3-card w3-hover-teal">Communication</button>
+				<div id="comm" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-round"  style="background-color:#202030">
+				<ul>
+				<li>Discord</li>
+				<li>Slack</li>
+				<li>Zoom</li>
+				<li>Email</li>
+				<li>Project Management</li>
+					<ul>
+					<li>Jira</li>
+					<li>Asana</li>
+					<li>Trello</li>
+					<li>Google Keep</li>
+					</ul>
+				</ul>
+				</div>
+		  </div>
+		  <!--End Skills-->
+		  </div>
+          
+		  <!--Awards-->
+		  <div class="w3-medium w3-card-4 w3-padding-small w3-round w3-margin-bottom" style="background-color:darkslategrey">
+		  <button onclick="hide_show('awd')" class="w3-button w3-large w3-round w3-block w3-left-align w3-hover-teal w3-hover-text-light-grey" style="color:lightseagreen"><b><i class="fa fa-trophy fa-fw w3-margin-right"></i><span style="color:white">Awards</span></b></button>
+			<div id="awd" class="w3-container w3-hide w3-card-4 w3-margin-left w3-margin-right w3-margin-bottom w3-round"  style="background-color:#202030">
+				<ul>
+				<li>Eagle Scout Award, Scouts BSA Troop 77</li>
+				<li>Willamette University DataFest 2022, Best Insight</li>
+				<li>J. Horn and E. Branson Music Scholarship, for exemplary service to the WU Music Department</li>
+				<li>Best RA program 2021-22, Willamette University Residence Life and Housing, for the Kaneko Karnival Halloween event</li>
+				<li>Music Scholarship Award, Willamette University, by audition</li>
+				<li>Citizenship Award 2013-14, Boulder Luncheon Optimists Club, by faculty recommendation for outstanding community contributions and citizenship</li>
+				<li>Academic Letter, 8 semesters at Boulder High School, for high GPA (&ge; 3.5)</li>
+				<li>Outstanding Linguist in Spanish, Boulder High School, for excellence in language study</li>
+				<li>Director's Award, Boulder High School Orchestra, for exemplary service</li>
+				<li>Honor Thespian, Boulder High School Troupe 60</li>
+				</ul>
+			</div>		  
+		  </div>
+          
+          <!--Foreign Languages-->
+		  <div class="w3-medium w3-card-4 w3-padding-small w3-round w3-margin-bottom" style="background-color:darkslategrey">
+		  <button onclick="hide_show('lang')" class="w3-button w3-large w3-round w3-block w3-left-align w3-hover-teal w3-hover-text-light-grey" style="color:lightseagreen"><b><i class="fa fa-globe fa-fw w3-margin-right"></i><span style="color:white">Foreign Languages</span></b></button>
+			  <div id="lang" class="w3-container w3-hide">
+			  <p>
+			  <div class="w3-light-grey w3-round-xlarge">
+				<div class="w3-round-xlarge" style="height:30px;width:100%;background-color:#202030">
+				<div class="w3-center w3-text-white">Native English Speaker</div>
+				</div>
+			  </div>
+			  </p>
+			  <p>
+			  <div class="w3-light-grey w3-round-xlarge">
+				<div class="w3-round-xlarge" style="height:30px;width:85%;background-color:#202030">
+				<div class="w3-center w3-text-white">Biliterate Spanish</div>
+				</div>
+			  </div>
+			  </p>
+			  <p>
+			  <div class="w3-light-grey w3-round-xlarge">
+				<div class="w3-round-xlarge" style="height:30px;width:35%;background-color:#202030">
+				<div class="w3-center w3-text-white">Russian</div>
+				</div>
+			  </div>
+			  </p>
+		  </div>
+		  </div>
+		  
+		  <!--Education-->
+		  <div class="w3-medium w3-card-4 w3-padding-small w3-round" style="background-color:darkslategrey">
+			<button onclick="hide_show('edu')" class="w3-button w3-large w3-round w3-block w3-left-align w3-hover-teal w3-hover-text-light-grey" style="color:lightseagreen"><b><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-large"></i><span class="w3-large" style="color:white">Education</span></b></button>
+				<div id="edu" class="w3-container w3-hide">
+				<!--WU-->
+				<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:#202030">
+				  <h5><b>Willamette University</b></h5>
+				  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019-2023</h6>
+					<p>Bachelor of Science, Computer Science</p>
+					<p>Bachelor of Arts, Mathematics</p>
+				</div>
+				<!--End-->
+				
+				<!--BHS-->
+				<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:#202030">
+				  <h5><b>Boulder High School</b></h5>
+				  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015-2019</h6>
+				</div>
+				<!--End-->
+				</div>
+		  </div>
+		  <!--End Section-->
+				
+		<!--End Left Card-->
+		</div>
+	  
+	<!-- End Left Column -->
+    </div>
+
+    <!-- <div class="w3-col s12 m5 l4"><p></p></div> -->
+	
+	<!-- Right Column -->
+    <div class="w3-rest w3-margin-bottom">
+    
+      <!--Work Experience-->
+	  <div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round w3-margin-bottom">
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Work Experience</h2>
+		<div id="work" class="w3-container">	
+			<!--FAST-->
+			<!--<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('fast')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Implementation Consultant / FAST Enterprises</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2023 - <span class="w3-tag w3-round" style="background-color:lightseagreen; color:darkslategrey">Current</span></h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="fast">
+				<li>Consulted with agencies to understand their business needs and how to implement the FAST software to best serve their customers</li>
+				<li>Clearly delivered information at both a high level and a technical level</li>
+				<li>Worked with a team of ??? people to problem-solve and respond quickly to changing project requirements and customer needs</li>
+				<li>Configured client-specific functionality to meet client agency’s unique requirements beyond out-of-the-box functionality, using built-in FAST tools as well as VB.Net and C#</li>
+				<li>Created and modified SQL queries to efficiently retrieve data from a relational database</li>
+				<li>Implemented new features, navigating them through testing and deployment</li>
+				<li>Maintained confidentiality and adhered to company policies along with relevant laws when exposed to protected client information</li>
+				<li>Relocated every 2-3 years to project sites throughout the United States</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			
+			<!--Aphrodite-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('aphrodite')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Research Assistant / Willamette University Computer Science <abbr title="Department">Dept.</abbr></b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - May 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="aphrodite">
+				<li>Developed an open-source Python script for gathering processor trace data from a RISC-V chip emulated in QEMU running on Ubuntu Linux</li>
+				<li>Wrote programs in RISC-V Assembly, using compilers and linkers to generate bare-metal executable files</li>
+				<li>Documented research process and findings using Markdown and GitHub</li>
+				<li>Presented research outcomes to audiences of 10-30 people</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			
+			<!--QUAD-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('quad')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Tutor / Willamette University QUAD center</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2023 - May 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="quad">
+				<li>Held open drop-in tutoring hours focusing on Mathematics and Computer Science topics</li>
+				<li>Facilitated one-on-one and group tutoring of 2-10 students</li>
+				<li>Assisted students in debugging Python programs, understanding problem sets, and exam study</li>
+				<li>Coached students' understanding of programming techniques and good software design practices</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			
+			<!--RA-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('ra')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Resident Advisor / Willamette University Residence Life and Housing</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - May 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="ra">
+				<li>Managed administrative duties such as fire safety checks, maintenance requests, and incident reports, as well as weekly staff meeting minutes and agendas</li>
+				<li>Served in a weekly on-call rotation, acting as the first layer of response to needs including but not limited to lockouts, medical emergencies, and facility/maintenance problems</li>
+				<li>Directed students to various university resources</li>
+				<li>Built and maintained a living learning community with 20+ residents through monthly active and passive programming</li>
+				<li>Enforced Housing policy, including quiet hours and the Student Code of Conduct</li>
+				<li>Assisted with opening and closing the dorms: completing room checks, filing maintenance reports, and other tasks to prepare the building for move-in</li>
+				<li>Mediated roommate conflicts in double rooms, triple suites, and four-person apartments</li>
+				<li>Supported residents in crisis situations, including mental health first aid such as QPR and Title IX-related concerns</li>
+				<li>Maintained confidentiality of protected student records and privacy of other personal information to the extent allowed and required by law, in particular, FERPA and required reporting responsibilities</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			
+			<!--Music Dept-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('msdpt')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Front Office Student Worker / Willamette University Music <abbr title="Department">Dept.</abbr></b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - May 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="msdpt">
+				<li>Designed and maintained department Web pages using Cascade CMS</li>
+				<li>Created and processed 12 paperless Google Forms in Sheets and created 8 fillable PDF forms</li>
+				<li>Designed and typeset 10+ concert programs each semester in Google Docs and Microsoft Office</li>
+				<li>Designed 8 event posters using Canva</li>
+				<li>Performed miscellaneous administrative and clerical tasks, including staffing an information desk window, answering phone calls, and returning emails with relevant information and procedures</li>
+				<li>Documented and optimized office workflows in a desk manual</li>
+				<li>Instructed new employees about office procedures and expected job tasks</li>
+				<li>Ushered for Department concerts&mdash;greeting 30-150 guests, handing out programs, and presenting curtain announcements</li>
+				</ul>
+			</div>
+			<!--End-->
+			
+			<!--Template-->
+			<!--<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('section')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Job Title / Company</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - <span class="w3-tag w3-round" style="background-color:lightseagreen; color:darkslategrey">Current</span></h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="section">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			</div>
+			<!--End Card-->
+		</div>
+		
+		<button onclick="hide_show('other')" class="w3-button w3-block w3-round w3-hover-teal w3-left-align">
+		<h2 class="w3-text-light-grey w3-padding-16"><i class="fas fa-building fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Additional Work Experience</h2>
+		</button>
+		<div id="other" class="w3-container w3-hide">
+			<!--WITS Summer-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('wits')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-light-grey w3-left-align">
+			  <h5><b>Technical Assistant / Willamette Integrated Technology Services</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2023 - Aug 2023</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="wits">
+				<li>Fixed technical issues in classroom equipment under direct supervision</li>
+				<li>Collaborated with two student employees and a supervisor to upgrade classroom equipment</li>
+				<li>Upgraded 18 teaching stations with new display switches, control systems, and A/V hardware</li>
+				<li>Set up and reimaged Mac and Windows computers using group policy</li>
+				<li>Maintained and upgraded network infrastructure, e.g. installing/replacing network cables and wireless access points</li>
+				<li>Responded to support tickets in Jira</li>
+			    </ul>
+			</div>
+			<!--End Card-->
+			<!--MarCom Web-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('marcom')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Web Production Assistant / Willamette University Marketing and Communications</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2021 - Jan 2022</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="marcom">
+				<li>Updated and maintained university Web pages using Cascade CMS and &nbsp;SiteImprove</li>
+				<li>Received tasks and instruction through Asana project management system</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			<!--Discord-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('discord')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Student Programmer / Willamette University <abbr title="Computer Science Department">CS Dept.</abbr></b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2021 - May 2021</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="discord">
+				<p style="text-align: center; margin-right: 56px;"><em>The paid portion of this work was completed in May 2021, however,  some administrative and moderation responsibilities were maintained on a volunteer basis until May 2023.</em></p>
+				<li>Proposed, developed, and implemented a Discord server for Computer Science students to use during the COVID crisis as a learning and social resource</li>
+				<li>Enforced server rules and policies, working with a team of 1-2 other moderators</li>
+				<li>Maintained a sense of community by making semi-regular posts and engaging in conversation with 50-60 server members</li>
+				<li>Documented server structure and procedures for future server admins</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			<!--Grounds-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('section')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Seasonal Groundskeeper / Boulder Valley School District</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>June 2021 - Aug 2021</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="section">
+				<li>Operated a school district-owned vehicle to and from work sites</li>
+				<li>Maintained neatness of lawns and landscaping at more than 10 schools in Boulder, Lafayette, Louisville, and Broomfield, CO</li>
+				<li>Operated gas-powered machinery such as weed whackers and lawnmowers</li>
+				<li>Collaborated with 2-10 other groundskeepers on project sites</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			<!--Suttle Lake-->
+			<div class="w3-container w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('suttle')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Kitchen Assistant / Suttle Lake United Methodist Camp</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2019 - Aug 2019</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="suttle">
+				<li>Served as “live-in” camp staff: housed in a cabin near campers to assist quickly in case of emergencies</li>
+				<li>Prepared meals for up to 140 people, including chopping vegetables, running the dishwasher, and packaging leftovers</li>
+				</ul>
+			</div>
+			<!--End Card-->
+		</div>
+		
+      </div>
+	  <!--End Section-->
+	  
+		<!--Volunteer Experience-->
+		<div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round w3-margin-bottom">
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fas fa-hand-holding-heart fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Volunteer Experience</h2>
+			<!--BSA-->
+			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('bsa')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Member / Scouts BSA Troop 77</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2012 - May 2019</h6>
+			  </button>
+				<ul class="w3-large w3-hide" id="bsa">
+				<li>Participated in numerous conservation projects, including trail building, gardening, and other maintenance tasks</li>
+				<li>Led and attended various teamwork and leadership skill development programs, including <abbr title="Introduction to Leadership Skills for Troops">ILST</abbr> and <abbr title="National Youth Leadership Training">NYLT</abbr></li>
+				<li>Planned and executed an Eagle Scout Project, building a new Orchestral Music Library at Boulder High School</li>
+				</ul>
+			  <div class="w3-margin-left">
+				  <button onclick="hide_show('spl')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Senior Patrol Leader</b></h5>
+				  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>April  - October 2018</h6>
+				  </button>
+					<ul class="w3-large w3-hide" id="spl">
+					<li>Led 10-20 Scouts on overnight outdoor outings, including a week-long backpacking trek at Philmont Scout Ranch</li>
+					<li>Conducted weekly troop meetings with 20-30 scouts and adult leaders, enforcing rules, delegating responsibilities, and monitoring safety</li>
+					<li>Led monthly leadership meetings with 4-6 scout and adult leaders from the troop, planning activities, managing schedules, and planning instructional sessions for weekly meetings</li>
+					</ul>
+				</div>
+			</div>
+			<!--End Card-->
+			<!--TA-->
+			<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('ta')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Teaching Assistant / Boulder High School</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="ta">
+				<li>Assisted course instructor in teaching basics of object-oriented programming in Java</li>
+				<li>Coached students one-on-one on lab projects, providing assistance and grading performance</li>
+				</ul>
+			</div>
+			<!--End Card-->
+			<!--Template-volunteer-->
+			<!--<div class="w3-container w3-card w3-round w3-margin-right w3-margin-left w3-margin-bottom" style="background-color:darkslategrey">
+			  <button onclick="hide_show('section')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+			  <h5><b>Position / Organization</b></h5>
+			  <h6><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2019 - Jan 2020</h6>
+			  </button>
+			    <ul class="w3-large w3-hide" id="section">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+				<li>Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic</li>
+				<li>Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste</li>
+				</ul>
+			</div>
+			<!--End Card-->
+		</div>
+		<!--End Section-->
+		
+		<!--Coursework-->
+		<div class="w3-blue-gray w3-container w3-card w3-padding-16 w3-round">
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge" style="color:darkslategrey"></i>Highlighted Coursework</h2>
+		<p>Course descriptions have been pulled from the <a href="https://collslfsrv.willamette.edu/Student/Courses">Willamette University Course Catalog</a>.</p>
+			
+			<div class="w3-row w3-small w3-block">
+				
+				<!--Data Struct-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('struct')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Data Structures</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="struct">Theoretical and practical study of programming and abstract data types including lists, stacks, queues, trees and algorithms used on these data structures.</p>
+				</div>
+				<!--End Card-->
+				
+				<!--Algorithms-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('algs')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Analysis of Algorithms</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="algs">Students will study methods to analyze algorithms for their correctness and run time efficiency as well as general design and analysis techniques. Topics include: asymptotic analysis, searching and sorting algorithms, divide and conquer techniques, greedy algorithms, dynamic programming, graph algorithms, efficient data structures, and NP-completeness.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Arch&Comp-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('anc')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+					<h5><b>Architecture and Compilers</b></h5>
+				  </button>
+				  <p class="w3-hide w3-margin" id="anc">An investigation into how computers and programs work, from the lower levels of internal logic to the higher levels of programming languages designed for human use. The lab portion of this course included simulating logic gates, building a parser, and implementing an assembler.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Net&Sys-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('sys')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Networks and Systems</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="sys">Students will learn low level languages of C and assembly, use command line tools to study these languages, use features of the operating system including parallelism and networking, and learn how to make changes to operating systems.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--JSem-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('jsem')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Software Development</b></h5>
+				  </button>
+					<div class="w3-hide w3-margin" id="jsem">
+					<p><em>This course was formerly titled <q>Junior Seminar in Computer Science.</q></em></p>
+					<hr>
+					<p>Students will take on various roles in a simulated development team to use real-world development tools to tackle a programming task of moderate size. Particular emphasis is placed on documenting this process, allowing future sections to continue the work as a <q>legacy project.</q></p>
+					</div>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Ethics-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('ethics')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Computers, Ethics, and Public Policy</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="ethics">Ethical and social issues related to the development and use of computer technology. Ethical theory, and social, political, and legal considerations. Scenarios in problem areas: privacy, reliability and risks of complex systems, and responsibility of professionals for applications and consequences of their work.</p>
+				</div>
+				
+				<!--End Card-->
+				
+			</div>
+			
+			<!--End Row-->
+			
+			<div class="w3-row w3-small w3-block">
+				
+				<!--GIS-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('envs250')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+					<h5><b>Introduction to Geographic Information Systems</b></h5>
+				  </button>
+				  <p class="w3-hide w3-margin" id="envs250">A comprehensive approach to cartography and spatial analysis, including the use of the global positioning system, computer-aided mapping and geographic information systems. Lecture, field and laboratory experience with an emphasis on class and individual projects.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Foundations-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('founds')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Foundations of Advanced Math</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="founds">This course provides an introduction to logic and the methods of proof commonly used in mathematics. Applications covered in the course are the foundations of set theory, the real number system, elementary number theory and other basic areas of mathematics.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Multi-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('multi')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Multivariable Calculus</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="multi">Three-dimensional analytic geometry; partial differentiation; maxima-minima problems; multiple integrals; vector fields, curl and divergence; line and surface integrals; applications.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Diff Eq-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('diffeq')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Differential Equations</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="diffeq">Elementary differential equations; linear differential equations of second order; Laplace transformations; infinite series solutions; systems of linear differential equations.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Linear-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('linear')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Linear Algebra</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="linear">Systems of linear equations, matrices, vector spaces and linear transformations.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Abstract-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('abstract')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Abstract Algebra</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="abstract">Number systems, elementary number theory, groups, rings, fields, polynomials and applications.</p>
+				</div>
+				
+				<!--End Card-->
+				
+			</div>
+				
+			<!--End Row-->
+				
+			<div class="w3-row w3-small w3-block">
+				
+				<!--Geometry-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('geom')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Modern Geometry</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="geom">A modern approach to geometry. Study of discrete and computational geometry, including construction and analysis of algorithms.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Thesis-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('thesis')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Research Seminar in Mathematics</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="thesis">Students complete their Mathematics senior thesis project under the mentorship of a departmental faculty member. Weekly meetings include peer teaching, study of new problems, presentation of progress on research plans, and practice with mathematical communication skills. The course culminates in a written paper and a formal oral presentation.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Course Template-->
+				<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('fundDS')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Fundamentals of Data Science</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="fundDS">Students will be introduced to concepts, techniques, and tools they need to solve practical problems arising in various fields. Specific topics include: 1) ethical issues, 2) data collection, cleaning, and exploratory analysis, 3) machine learning algorithms (including: regression, classification, and clustering), 4) predictive modeling, 5) data visualization, and 6) effective communication.</p>
+				</div>
+				
+				<!--End Card-->
+				
+				<!--Course Template-->
+				<!--<div class="w3-container w3-col l4 m6 w3-card w3-round w3-margin-bottom" style="background-color:darkslategrey">
+				  <button onclick="hide_show('desc')" class="w3-button w3-block w3-round w3-hover-teal w3-hover-text-dark-grey w3-left-align">
+				  <h5><b>Course Title</b></h5>
+				  </button>
+					<p class="w3-hide w3-margin" id="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+				
+				<!--End Card-->
+			</div>
+		</div>
+		<!--End Section-->
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<!-- <div id="app-footer"></div> -->
+
+</body>
+
+<!-- </html> -->
