@@ -62,3 +62,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+
+function hide_show(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+	x.className += " w3-show";
+  } else {
+	x.className = x.className.replace(" w3-show", "");
+  }
+}
