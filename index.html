@@ -1,14 +1,12 @@
+---
+title: Juni L DeYoung
+---
+
 <!DOCTYPE html>
 <html>
-<head id="imports">
-	<title>Juni L DeYoung</title>
-	<!--<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=EB+Garamond">
-	<script src="https://kit.fontawesome.com/2305782426.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="Common/homepage.css">-->
+	
+	{%- include head.html -%}
+	
 	<style>
 	body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 	body, html {
@@ -60,14 +58,10 @@
 	  }
 	}
 	</style>
-</head>
-
-<!--<header id="app-header"></header>-->
 
 <body>
 
 <script src="Common/script.js"></script>
-<script defer src="Common/hdr-ftr.js"></script>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
@@ -123,32 +117,32 @@
 	  <!-- Full-width images with number and caption text -->
 	  <div class="mySlides fade">
 		<div class="numbertext">1 / 6</div>
-		<img src="Images/headshot-4.jpg" style="width:100%">
+		<img src="Images/headshot-4.jpg" onclick="onClick(this)" alt="Juni's trademark coat and hat adorn their layered autumnal outfit" title="Senior Recital publicity photo" style="width:100%">
 	  </div>
 
 	  <div class="mySlides fade">
 		<div class="numbertext">2 / 6</div>
-		<img src="Images/headshot-6.jpg" style="width:100%">
+		<img src="Images/headshot-6.jpg" onclick="onClick(this)" alt="Juni wears a tuxedo and stands next to a piano at their Senior Recital" title="Senior Recital outfit" style="width:100%">
 	  </div>
 
 	  <div class="mySlides fade">
 		<div class="numbertext">3 / 6</div>
-		<img src="Images/headshot-1.jpg" style="width:100%">
+		<img src="Images/headshot-1.jpg" onclick="onClick(this)" alt="Juni, with their iconic cowboy hat and cordouroy shirt with pen in pocket" title="Math Department headshot" style="width:100%">
 	  </div>
 	  
 	  <div class="mySlides fade">
 		<div class="numbertext">4 / 6</div>
-		<img src="Images/headshot-2.jpg" style="width:100%">
+		<img src="Images/headshot-2.jpg" onclick="onClick(this)" alt="A clean-shaven Juni looks sultrily into the camera" title="High school senior portrait photoshoot (1 / 2)" style="width:100%">
 	  </div>
 	  
 	  <div class="mySlides fade">
 		<div class="numbertext">5 / 6</div>
-		<img src="Images/headshot-3.jpg" style="width:100%">
+		<img src="Images/headshot-3.jpg" onclick="onClick(this)" alt="Juni looks dashing in a white shirt and colorful, Western-style vest" title="High school senior portrait photoshoot (2 / 2)" style="width:100%">
 	  </div>
 	  
 	  <div class="mySlides fade">
 		<div class="numbertext">6 / 6</div>
-		<img src="Images/headshot-5.jpg" style="width:100%">
+		<img src="Images/headshot-5.jpg" onclick="onClick(this)" alt="Juni stands on a stage in their full Scout uniform, displaying an impressive collection of merit badges" title="Eagle Scout Court of Honor" style="width:100%">
 	  </div>
 
 	  <!-- Next and previous buttons -->
@@ -215,123 +209,123 @@
   <!--Button grid-->
   <div class="w3-row-padding w3-center w3-section w3-margin-bottom">
 	<div class="w3-container w3-col m3">
-		<a class="w3-button w3-dark-grey w3-text-light-grey" href="#photo">PHOTOGRAPHY</a>
+		<a class="button" href="#photo">PHOTOGRAPHY</a>
 	</div>
 	<div class="w3-container w3-col m3">
-		<a class="w3-button w3-dark-grey w3-text-light-grey" style="background-color:lightseagreen" href="#fic">FICTION</a>
+		<a class="button" href="#fic">FICTION</a>
 	</div>
 	<div class="w3-container w3-col m3">
-		<a class="w3-button w3-dark-grey w3-text-light-grey" style="background-color:lightseagreen" href="#music">MUSIC</a>
+		<a class="button" href="#music">MUSIC</a>
 	</div>
 	<div class="w3-container w3-col m3">
-		<a class="w3-button w3-dark-grey w3-text-light-grey" style="background-color:lightseagreen" href="#gh">GITHUB</a>
+		<a class="button" href="#gh">GITHUB</a>
 	</div>
   </div>
   <!--End buttons-->
   
-  <div class="w3-container w3-padding-large w3-section w3-round w3-card-1 w3-dark-grey" id="photo">
+  <div class="card1" id="photo">
 	  <h2 class="w3-center">Photography</h2>
 	  
 	  <!--Gallery card-->
-	  <div class="w3-section w3-padding-large w3-margin-bottom w3-round w3-card-4" style="background-color:#404050">
+	  <div class="card2">
 		  <p class="w3-center"><em>Click on the images to make them bigger.</em></p>
 
 		  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 		  <div class="w3-row-padding w3-center">
 			<div class="w3-col m3">
-			  <img src="Images/Gallery/berries.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Red berries">
+			  <img src="Images/Gallery/berries.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Red berries">
 			</div>
 
 			<div class="w3-col m3">
-			  <img src="Images/Gallery/chautauqua.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hiking in the winter">
+			  <img src="Images/Gallery/chautauqua.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Hiking in the winter">
 			</div>
 
 			<div class="w3-col m3">
-			  <img src="Images/Gallery/collins-flowers.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Spring flowers outside Collins Science Center">
+			  <img src="Images/Gallery/collins-flowers.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Spring flowers outside Collins Science Center">
 			</div>
 
 			<div class="w3-col m3">
-			  <img src="Images/Gallery/denver-capitol.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="CO State Capitol building in Denver">
+			  <img src="Images/Gallery/denver-capitol.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="CO State Capitol building in Denver">
 			</div>
 		  </div>
 
 		  <div class="w3-row-padding w3-center w3-section">
 			<div class="w3-col m3">
-			  <img src="Images/Gallery/fall-bench-millstream.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="An atumnal tree and bench overlooking the Mill Stream">
+			  <img src="Images/Gallery/fall-bench-millstream.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="An atumnal tree and bench overlooking the Mill Stream">
 			</div>
 
 			<div class="w3-col m3">
-			  <img src="Images/Gallery/flatirons.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The flatirons in Boulder">
+			  <img src="Images/Gallery/flatirons.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="The flatirons in Boulder">
 			</div>
 
 			<div class="w3-col m3">
-			  <img src="Images/Gallery/fort-logan.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Gravestones at Fort Logan National Cemetery">
+			  <img src="Images/Gallery/fort-logan.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Gravestones at Fort Logan National Cemetery">
 			</div>
 
 			<div class="w3-col m3">
-			  <img src="Images/Gallery/hummer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A hummingbird taking a meal">
+			  <img src="Images/Gallery/hummer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="A hummingbird taking a meal">
 			</div>
 		  </div>
 			  
 			<!--<p id="dots">&nbsp;</p>-->
 			
 			<div class="w3-container w3-center">
-				<button class="w3-button w3-center w3-padding w3-teal" id="myBtn" onclick="hide_show('more');">More Photos</button>
+				<a class="button w3-center w3-padding" id="myBtn" onclick="hide_show('more');">More Photos</a>
 			</div>
 			
 			<!--Show More section-->
 			<div id="more" class="w3-hide">
 				<div class="w3-row-padding w3-center w3-section">
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/icy-bushes-goudy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bushes outside Goudy Commons during the Feb. 2021 ice storm">
+					  <img src="Images/Gallery/icy-bushes-goudy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Bushes outside Goudy Commons during the Feb. 2021 ice storm">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/tippy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A black cat stalks through the garden, ready to pounce">
+					  <img src="Images/Gallery/tippy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="A black cat stalks through the garden, ready to pounce">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/junco.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Oregon Junco perched in a tree">
+					  <img src="Images/Gallery/junco.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Oregon Junco perched in a tree">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/millstream-sunset.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jackson Plaza, the Hatfield Library, and the Mill Stream at sunset">
+					  <img src="Images/Gallery/millstream-sunset.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Jackson Plaza, the Hatfield Library, and the Mill Stream at sunset">
 					</div>
 				</div>
 				
 				<div class="w3-row-padding w3-center w3-section">
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/mossy-millstream.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A patch of moss overlooking the Mill Stream">
+					  <img src="Images/Gallery/mossy-millstream.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="A patch of moss overlooking the Mill Stream">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/pepe-window.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A cat gazes wistfully through the cloudy window">
+					  <img src="Images/Gallery/pepe-window.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="A cat gazes wistfully through the cloudy window">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/sun-rays.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The sun shows off its power">
+					  <img src="Images/Gallery/sun-rays.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="The sun shows off its power">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/salem-smoke.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Historic wildfires blanketed the city of Salem with thick smoke in September 2020">
+					  <img src="Images/Gallery/salem-smoke.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Historic wildfires blanketed the city of Salem with thick smoke in September 2020">
 					</div>
 				</div>
 				
 				<div class="w3-row-padding w3-center w3-section">
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/snowy-spruce.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Snow melts in the sun on a spruce branch">
+					  <img src="Images/Gallery/snowy-spruce.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Snow melts in the sun on a spruce branch">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/staircase-effects.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The trail winds uphill">
+					  <img src="Images/Gallery/staircase-effects.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="The trail winds uphill">
 					</div>
 					
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/IMG_20210213_135916317.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Budding flower encased in ice from the Feb. 2021 ice storm">
+					  <img src="Images/Gallery/IMG_20210213_135916317.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Budding flower encased in ice from the Feb. 2021 ice storm">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/lizard.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A lizard pauses to rest on a rock">
+					  <img src="Images/Gallery/lizard.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="A lizard pauses to rest on a rock">
 					</div>
 				</div>
 			</div>
@@ -342,19 +336,20 @@
     </div>
 	<!--End photo section-->
 	
-	<div class="w3-container w3-section w3-round w3-card-1 w3-dark-grey" id="fic">
+	<div class="card1" id="fic">
 		<h2 class="w3-center"><a href="https://archiveofourown.org/users/RC_5280/pseuds/RC_5280" target="_blank" style="text-decoration:none">Fanfiction</a></h2>
 		
-		<div class="w3-section w3-padding-large w3-margin-bottom w3-round w3-card-4" style="background-color:#404050">
+		<div class="card2">
 		<h3 class="w3-center w3-text-teal"><a href="https://archiveofourown.org/works/23381440/chapters/56027086" target="_blank" style="text-decoration:none">Republic Commando: Phi Squad</a></h3>
 		<p class="w3-center">A multimedia project spanning several years, consisting of 
 			<a href="https://archiveofourown.org/works/23381440/chapters/56027086" target="_blank">prose fiction</a>, 
 			<a href="https://www.moddb.com/mods/phi-squad">videogame mods</a>, and even a 
-			<a href="https://youtu.be/BR_1VtQdF34" target="_blank">music video</a>. <!--Find more details in my blog!-->
+			<a href="https://youtu.be/BR_1VtQdF34" target="_blank">music video</a>, <em>Phi Squad</em> follows the adventures of an original squad of clone commandos, inspired by the 2005 videogame <em>Star Wars: Republic Commando</em>, Karen Traviss's <em>Republic Commando</em> book series, and the 2008 animated TV series <em>Star Wars: The Clone Wars</em>.
+			<!--Find more details in my blog!-->
 		</p>
 		
 		<div class="w3-center">
-			<!-- <button class="w3-button w3-center w3-padding w3-teal" id="myBtn" onclick="hide_show('phiGal');">Image Gallery</button> -->
+			<!-- <button class="button w3-center w3-padding w3-teal" id="myBtn" onclick="hide_show('phiGal');">Image Gallery</button> -->
 			
 			<div class="w3-container" id="phiGal">
 				<p class="w3-center"><em>Click on the images to make them bigger.</em></p>
@@ -363,21 +358,21 @@
 				  <div class="w3-row-padding w3-center">
 					<!--Poster image-->
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/phi-poster.png" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Poster designed with Source filmmaker and GIMP">
+					  <img src="Images/Gallery/phi-poster.png" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Poster designed with Source filmmaker and GIMP">
 					</div>
 
 					<!--Screenshots from the mod-->
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/phi-kamino.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Phi Squad on Kamino (Phi Squad Mod)">
+					  <img src="Images/Gallery/phi-kamino.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Phi Squad on Kamino (Phi Squad Mod)">
 					</div>
 
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/phi-kashyyyk.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Phi Squad on Kashyyyk (Phi Squad Mod)">
+					  <img src="Images/Gallery/phi-kashyyyk.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Phi Squad on Kashyyyk (Phi Squad Mod)">
 					</div>
 
 					<!--Book cover-->
 					<div class="w3-col m3">
-					  <img src="Images/Gallery/phi-book-cover.png" style="height: 160px" onclick="onClick(this)" class="w3-hover-opacity" alt="Book cover designed with Paint.NET">
+					  <img src="Images/Gallery/phi-book-cover.png" style="object-fit: contain" onclick="onClick(this)" class="w3-hover-opacity gallery" alt="Book cover designed with Paint.NET">
 					</div>    
 					<!--end cols-->
 				</div>
@@ -387,7 +382,7 @@
 		</div>
 
 		
-		<div class="w3-section w3-padding w3-round w3-card-4" style="background-color:#404050">
+		<div class="card2">
 		<h3 class="w3-center w3-text-teal"><a href="https://archiveofourown.org/series/2584789" target="_blank" style="text-decoration:none">Codex: Ijaat'la</h3>
 		<p class="w3-center">
 		A spinoff of <cite>Phi Squad</cite>, <a href="https://archiveofourown.org/series/2584789" target="_blank"><cite>Codex: Ijaat'la</cite></a> is a work-in-progress anthology of short stories featuring the original characters from Phi Squad, plus some new faces. The <cite>Codex</cite> takes place primarily after the events of <cite>Phi Squad</cite>, during the build-up to the Galactic Civil War of Star Wars' original trilogy. It features occasional cameos from well-known characters in the universe. Stories in the <cite>Codex</cite> comprise a range of perspectives, styles, and themes.
@@ -400,18 +395,18 @@
 	</div>
 	<!--End fic section-->
 	
-	<div class="w3-container w3-padding w3-center w3-section w3-round w3-card-1 w3-dark-grey" id="music">
+	<div class="card1" id="music">
         <h2 class="w3-center">Music</h2>
 		
-		<div class="w3-section w3-padding w3-round w3-card-4" id="recital" style="background-color:#404050">
-			<h3>Senior Recital</h3>
+		<div class="card2" id="recital">
+			<h3 class="w3-center">Senior Recital</h3>
 			<p>I have taken voice lessons for many years, and that work has been showcased at my Senior Recital on April 22, 2023, where I performed R. Vaughan Williams' <a href="https://en.wikipedia.org/wiki/Songs_of_Travel" target="_blank"><cite author="R. Vaughan Williams">Songs of Travel</cite></a> song cycle, a setting of <a href="https://en.wikisource.org/wiki/Songs_of_Travel_and_Other_Verses" target="_blank">poetry by Robert Louis Stevenson</a>. The recital will take place at 3:00 PM in Rogers Rehearsal Hall, located in Willamette University's Mary Stewart Rogers Music Center.</p>	
 			<!--<img src="Images/poster.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Recital poster">-->
 			<iframe width="100%" height="500px" src="https://www.youtube.com/embed/5CBS0p1QWnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 		
-		<div class="w3-section w3-padding w3-round w3-card-4" style="background-color:#404050">
-			<h3><a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank" style="text-decoration:none">YouTube</a></h3>
+		<div class="card2">
+			<h3 class="w3-center"><a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank" style="text-decoration:none">YouTube</a></h3>
 			<p class="w3-center">You can find some of my recordings and music videos (as well as other content) on my <a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank">YouTube channel</a>. Here are some highlights.</p>
 		
 			<div class="w3-row-padding w3-center">
@@ -435,20 +430,20 @@
     </div><br>
 	<!--End music section-->
 
-    <div class="w3-container w3-padding w3-center w3-section w3-round w3-card-1 w3-dark-grey" id="gh">
+    <div class="card1" id="gh">
         <h2 class="w3-center">GitHub</h2>
         
-		<div class="w3-section w3-padding w3-round w3-card-4" style="background-color:#404050">
+		<div class="card2">
 			<p class="w3-center">You can find some examples of my previous programming projects over on <a href="http://github.com/jldeyoung" target="_blank">GitHub</a>.</p>
 			
 			<!--Button grid-->
 			<div class="w3-row-padding w3-center w3-section w3-margin-bottom">
 				<div class="w3-container w3-col m3"><p>&nbsp;</p></div>
 				<div class="w3-container w3-col m3">
-					<a class="w3-button w3-center w3-padding w3-teal" href="https://github.com/wu-jldeyoung/Aphrodite">Aphrodite</a>
+					<a class="button" href="https://github.com/wu-jldeyoung/Aphrodite">Aphrodite</a>
 				</div>
 				<div class="w3-container w3-col m3">
-					<a class="w3-button w3-center w3-padding w3-teal" href="https://github.com/wu-jldeyoung/snek.c">snek.c</a>
+					<a class="button" href="https://github.com/wu-jldeyoung/snek.c">snek.c</a>
 				</div>
 			</div>
 			<!--End buttons-->
@@ -461,7 +456,7 @@
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <span class="button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" class="w3-image">
     <p id="caption" class="w3-opacity w3-large"></p>
@@ -502,7 +497,7 @@
           </div>
         </div>
         <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <button class="button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </form>-->
@@ -513,15 +508,6 @@
 </body>
 
 <!-- Footer -->
-<footer id="app-footer"><!--class="w3-center w3-black w3-padding-64"-->
-  <!--<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>-->
-  <!--<div class="w3-xlarge w3-section">
-	<a href="http://github.com/jldeyoung" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-	<a href="https://www.youtube.com/channel/UCnKg2-8ka1HsXlO7nBTXcOQ" target="_blank"><i class="fa fa-youtube-play w3-hover-opacity"></i></a>
-	<a href="mailto:jldeyoung@live.com"><i class="fa fa-envelope w3-hover-opacity" target="_blank"></i></a>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <p>Images by Juni L DeYoung &copy; 2023.</p>-->
-</footer>
+{%- include footer.html -%}
 
 </html>
