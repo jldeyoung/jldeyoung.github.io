@@ -102,7 +102,7 @@ title: Juni L DeYoung
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center w3-text-teal">ABOUT ME</h3>
   <!--<p class="w3-center"><em>Programmer. Student. Musician. Photographer.</em></p>-->
-	<p>Hi there. I'm Juni, a recent Computer Science and Mathematics graduate from Willamette University in Salem, OR, class of 2023. Welcome to my website! It's an honor to have you here, and I hope you enjoy this showcase of the many things I do. There's a lot here, so please take your time and feel empowered to skim rather than read word-for-word.</p>
+	<p>Hi there. I'm Juni, an Implementation Consultant at FAST Enterprises and a Computer Science and Mathematics graduate from Willamette University in Salem, OR, class of 2023. Welcome to my website! It's an honor to have you here, and I hope you enjoy this showcase of the many things I do. There's a lot here, so please take your time and feel empowered to skim rather than read word-for-word.</p>
 	<p>Check out my <a href="blog/index.html">blog</a> to get a deeper dive on my recent projects.</p>
 	<p>You can also find my <a href="resume.html">interactive master resume</a> on this site. There's so many satisfying buttons to click!</p>
   
@@ -116,32 +116,37 @@ title: Juni L DeYoung
 
 	  <!-- Full-width images with number and caption text -->
 	  <div class="mySlides fade">
-		<div class="numbertext">1 / 6</div>
+		<div class="numbertext">1 / 7</div>
+		<img src="Images/headshot-7.jpg" onclick="onClick(this)" alt="Juni's professional headshot, featuring a dark purple shirt, a patterned black tie, and a grey vest" title="FAST Enterprises headshot" style="width:100%">
+	  </div>
+	  
+	  <div class="mySlides fade">
+		<div class="numbertext">2 / 7</div>
 		<img src="Images/headshot-4.jpg" onclick="onClick(this)" alt="Juni's trademark coat and hat adorn their layered autumnal outfit" title="Senior Recital publicity photo" style="width:100%">
 	  </div>
 
 	  <div class="mySlides fade">
-		<div class="numbertext">2 / 6</div>
+		<div class="numbertext">3 / 7</div>
 		<img src="Images/headshot-6.jpg" onclick="onClick(this)" alt="Juni wears a tuxedo and stands next to a piano at their Senior Recital" title="Senior Recital outfit" style="width:100%">
 	  </div>
 
 	  <div class="mySlides fade">
-		<div class="numbertext">3 / 6</div>
+		<div class="numbertext">4 / 7</div>
 		<img src="Images/headshot-1.jpg" onclick="onClick(this)" alt="Juni, with their iconic cowboy hat and cordouroy shirt with pen in pocket" title="Math Department headshot" style="width:100%">
 	  </div>
 	  
 	  <div class="mySlides fade">
-		<div class="numbertext">4 / 6</div>
+		<div class="numbertext">5 / 7</div>
 		<img src="Images/headshot-2.jpg" onclick="onClick(this)" alt="A clean-shaven Juni looks sultrily into the camera" title="High school senior portrait photoshoot (1 / 2)" style="width:100%">
 	  </div>
 	  
 	  <div class="mySlides fade">
-		<div class="numbertext">5 / 6</div>
+		<div class="numbertext">6 / 7</div>
 		<img src="Images/headshot-3.jpg" onclick="onClick(this)" alt="Juni looks dashing in a white shirt and colorful, Western-style vest" title="High school senior portrait photoshoot (2 / 2)" style="width:100%">
 	  </div>
 	  
 	  <div class="mySlides fade">
-		<div class="numbertext">6 / 6</div>
+		<div class="numbertext">7 / 7</div>
 		<img src="Images/headshot-5.jpg" onclick="onClick(this)" alt="Juni stands on a stage in their full Scout uniform, displaying an impressive collection of merit badges" title="Eagle Scout Court of Honor" style="width:100%">
 	  </div>
 
@@ -157,6 +162,7 @@ title: Juni L DeYoung
 		  <span class="dot" onclick="currentSlide(4)"></span>
 		  <span class="dot" onclick="currentSlide(5)"></span>
 		  <span class="dot" onclick="currentSlide(6)"></span>
+		  <span class="dot" onclick="currentSlide(7)"></span>
 		</div> 
 	</div>
 	<!-- <br> -->
@@ -383,14 +389,19 @@ title: Juni L DeYoung
 
 		
 		<div class="card2">
-		<h3 class="w3-center w3-text-teal"><a href="https://archiveofourown.org/series/2584789" target="_blank" style="text-decoration:none">Codex: Ijaat'la</h3>
-		<p class="w3-center">
-		A spinoff of <cite>Phi Squad</cite>, <a href="https://archiveofourown.org/series/2584789" target="_blank"><cite>Codex: Ijaat'la</cite></a> is a work-in-progress anthology of short stories featuring the original characters from Phi Squad, plus some new faces. The <cite>Codex</cite> takes place primarily after the events of <cite>Phi Squad</cite>, during the build-up to the Galactic Civil War of Star Wars' original trilogy. It features occasional cameos from well-known characters in the universe. Stories in the <cite>Codex</cite> comprise a range of perspectives, styles, and themes.
-		</p>
-		
-		<p class="w3-center">
-		In keeping with the multimedia nature of the original, the <cite>Codex</cite> will soon be expanding into the realm of <q>podfic,</q> a medium somewhere between podcasts and audiobooks, whose content is typically fan fiction.
-		</p>
+			<h3 class="w3-center w3-text-teal"><a href="https://archiveofourown.org/series/2584789" target="_blank" style="text-decoration:none">Codex: Ijaat'la</h3>
+			<p class="w3-center">
+			A spinoff of <cite>Phi Squad</cite>, <a href="https://archiveofourown.org/series/2584789" target="_blank"><cite>Codex: Ijaat'la</cite></a> is a work-in-progress anthology of short stories featuring the original characters from Phi Squad, plus some new faces. The <cite>Codex</cite> takes place primarily after the events of <cite>Phi Squad</cite>, during the build-up to the Galactic Civil War of Star Wars' original trilogy. It features occasional cameos from well-known characters in the universe. Stories in the <cite>Codex</cite> comprise a range of perspectives, styles, and themes.
+			</p>
+			
+			<p class="w3-center">
+			In keeping with the multimedia nature of the original, the <cite>Codex</cite> is expanding into the realm of <a href="https://archiveofourown.org/series/3696655"><q>podfic,</q></a> a medium somewhere between podcasts and audiobooks, whose content is typically fan fiction. You can now listen to the first podfic entry in the series, <a href="https://archiveofourown.org/works/49722739"><em>Wounds of War</em></a>.
+			</p>
+			
+			<div class="w3-center">
+				<audio src="https://archive.org/download/wounds-of-war-an-ijaatla-podfic/Wounds-of-war-FULL%20MIX.mp3" controls="controls" crossorigin="anonymous" preload="metadata">
+				<p>Your browser doesn't support streaming with the HTML5 audio tag, but you can still <a href="https://archive.org/download/wounds-of-war-an-ijaatla-podfic/Wounds-of-war-FULL%20MIX.mp3" rel="nofollow">download this podfic</a>.</p></audio>
+			</div>
 		</div>
 	</div>
 	<!--End fic section-->
